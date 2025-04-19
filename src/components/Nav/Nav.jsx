@@ -1,13 +1,16 @@
+import "./Nav.scss";
+import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
+const Nav = () => {
+  return (
+    <>
+      <nav className="nav">
+        <h1 className="nav__logo">
+          Trigger<span className="nav__logo-pink">Tech</span>
+        </h1>
+        <BurgerMenu/>
+      </nav>
+    </>
+  );
+};
 
-export default Nav = () => {
-    return (
-        <>
-        <nav className="nav">
-            <h1 className="nav__logo">TriggerTech<span className="nav__logo-pink">Labs</span></h1>
-            <button className="nav__menu-btn">
-                
-            </button>
-        </nav>
-        </>
-    )
-}
+export default Nav;
