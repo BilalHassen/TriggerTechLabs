@@ -13,7 +13,7 @@ export const BurgerMenu = () => {
     <>
         <button
         className={`nav__burger-btn ${isOpen ? "open" : ""}`}
-        onClick={toggleMenu}
+        onClick={()=>setIsOpen(!isOpen)}
         aria-label="Toggle menu"
       >
         <span className={`nav__burger-bar ${isOpen ? "open-bar-1" : ""}`}></span>
