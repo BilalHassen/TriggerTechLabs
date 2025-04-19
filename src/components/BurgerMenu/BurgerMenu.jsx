@@ -11,17 +11,14 @@ export const BurgerMenu = () => {
 
   return (
     <>
-      {isOpen ? (
-         <button className="nav__burger-btn-close" onClick={toggleMenu}>
-         <p>x</p>
-        </button>
-       
-      ) : (
-        <button className="nav__burger-btn" onClick={toggleMenu}>
-          <span className="nav__burger-bar"></span>
-          <span className="nav__burger-bar"></span>
-        </button>
-      )}
+        <button
+        className={`nav__burger-btn ${isOpen ? "open" : ""}`}
+        onClick={toggleMenu}
+        aria-label="Toggle menu"
+      >
+        <span className={`nav__burger-bar ${isOpen ? "open-bar-1" : ""}`}></span>
+        <span className={`nav__burger-bar ${isOpen ? "open-bar-2" : ""}`}></span>
+      </button>
 
       <div className={`nav__menu ${isOpen ? "nav__menu-open" : ""}`}>
         <h1>this is the menu</h1>
