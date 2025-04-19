@@ -9,22 +9,27 @@ export const BurgerMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  
-
-
   return (
     <>
-    
-      <button className="nav__burger-btn" onClick={toggleMenu}>
-        <span className="nav__burger-bar"></span>
-        <span className="nav__burger-bar"></span>
-      </button>
+      {isOpen ? (
+         <button className="nav__burger-btn-close" onClick={toggleMenu}>
+         <p>x</p>
+        </button>
+       
+      ) : (
+        <button className="nav__burger-btn" onClick={toggleMenu}>
+          <span className="nav__burger-bar"></span>
+          <span className="nav__burger-bar"></span>
+        </button>
+      )}
 
       <div className={`nav__menu ${isOpen ? "nav__menu-open" : ""}`}>
         <h1>this is the menu</h1>
       </div>
 
-      <div className={`nav__overlay ${isOpen ? "nav__overlay-open" : ""}`}></div>
+      <div
+        className={`nav__overlay ${isOpen ? "nav__overlay-open" : ""}`}
+      ></div>
     </>
   );
 };

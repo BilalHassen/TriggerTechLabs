@@ -44,10 +44,35 @@
 
 
     &__burger-bar{
-        height: 1.5px;
+        height: 2px;
         width: 50%;  
         background-color: white; 
-        transition: border-color 0.3s ease;
+        transition: background-color 0.3s ease;
       
     }
+
+    &__burger-btn-close{
+        position: relative;
+        z-index: 1001;
+        border-radius: 40px;
+        height: 5rem;
+        width: 5rem;
+        background-color: $mainBgColour;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        gap: .7rem;
+        align-items: center; 
+        cursor: pointer;
+        transition: border-color 0.3s ease;
+        
+        &:hover{
+            border-color: $pink;
+            .nav__burger-bar{
+                background-color: $pink;
+            }
+        }
+    }
+    
 }
