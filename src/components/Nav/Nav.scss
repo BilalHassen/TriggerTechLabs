@@ -19,6 +19,8 @@
     }
 
     &__burger-btn{
+        position: relative;
+        z-index: 1001;
         border-radius: 40px;
         height: 5rem;
         width: 5rem;
