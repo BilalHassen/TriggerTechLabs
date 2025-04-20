@@ -4,7 +4,7 @@ function SideMenu({isOpen}) {
     console.log(isOpen)
   return (
     
-    <div className={`nav__menu ${isOpen ? "nav__menu-open" : ""}`}>
+    <div className={`nav__side-menu ${isOpen ? "nav__side-menu-open" : ""}`}>
     <h1>this is the menu</h1>
   </div>
   )

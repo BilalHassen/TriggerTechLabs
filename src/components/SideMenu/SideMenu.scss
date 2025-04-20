@@ -1,37 +1,37 @@
-// @use "../../styles/partials/variables" as *;
+@use "../../styles/partials/variables" as *;
 
-// .nav {
-//   &__menu {
-//     position: fixed; /* Sticks the menu relative to the viewport */
-//     top: 0;
-//     left: 0; /* Aligns the menu to the left */
-//     width: 80%; /* Makes the menu span the entire width */
-//     height: 100vh; /* Makes the menu span the entire height of the screen */
-//     background-color: $black; /* Dark background for overlay effect */
-//     z-index: 1000; /* Ensures the menu is above other elements */
-//     transform: translateY(100%);
-//     transition: transform 1s ease-in-out;
-//   }
+.nav {
+  &__side-menu {
+    position: fixed; /* Sticks the menu relative to the viewport */
+    top: 0;
+    left: 0; /* Aligns the menu to the left */
+    width: 80%; /* Makes the menu span the entire width */
+    height: 100vh; /* Makes the menu span the entire height of the screen */
+    background-color: $black; /* Dark background for overlay effect */
+    z-index: 1000; /* Ensures the menu is above other elements */
+    transform: translateY(100%);
+    transition: transform 1s ease-in-out;
+  }
 
-//   &__menu-open{
-//     transform: translateY(0);
-//   }
+  &__side-menu-open{
+    transform: translateY(0);
+  }
 
-//   &__overlay{
-//     position: fixed; /* Sticks the menu relative to the viewport */
-//     top: 0;
-//     left: 0; /* Aligns the menu to the left */
-//     width: 100%; /* Makes the menu span the entire width */
-//     height: 100vh; /* Makes the menu span the entire height of the screen */
-//     background-color: rgba(65, 65, 65, .6745098039); /* Dark background for overlay effect */
-//     z-index: 999; /* Ensures the menu is above other elements */
-//     transform: translateY(-100%);
-//     transition: transform 1s ease-in-out;
-//   }
+  &__overlay{
+    position: fixed; /* Sticks the menu relative to the viewport */
+    top: 0;
+    left: 0; /* Aligns the menu to the left */
+    width: 100%; /* Makes the menu span the entire width */
+    height: 100vh; /* Makes the menu span the entire height of the screen */
+    background-color: rgba(65, 65, 65, .6745098039); /* Dark background for overlay effect */
+    z-index: 999; /* Ensures the menu is above other elements */
+    transform: translateY(-100%);
+    transition: transform 1s ease-in-out;
+  }
 
-//   &__overlay-open{
-//     transform: translateY(0);
-//   }
+  &__overlay-open{
+    transform: translateY(0);
+  }
 
-// }
+}
 
