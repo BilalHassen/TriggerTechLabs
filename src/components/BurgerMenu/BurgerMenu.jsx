@@ -1,13 +1,11 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./BurgerMenu.scss";
+import SideMenu from "../SideMenu/SideMenu";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <>
@@ -20,7 +18,7 @@ export const BurgerMenu = () => {
         <span className={`nav__burger-bar ${isOpen ? "open-bar-2" : ""}`}></span>
       </button>
 
-      <div className={`nav__menu ${isOpen ? "nav__menu-open" : ""}`}>
+     <div className={`nav__menu ${isOpen ? "nav__menu-open" : ""}`}>
         <h1>this is the menu</h1>
       </div>
 
