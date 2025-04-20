@@ -2,14 +2,20 @@
 
 .nav{
     &__side-menu-logo{
-        margin: 4rem 0rem 5rem 0rem;
-        font-size: 2.8rem;
+        margin-top: 4rem;
+        font-size: 3rem;
         color: white;
+        transition: transform 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.2) translateX(8%)
+        }
       }
     
       &__side-menu-logo-pink{
         color: $pink;
-        font-size: 2.8rem;
+        font-size: 3rem;
       }
     
       &__side-menu-list{

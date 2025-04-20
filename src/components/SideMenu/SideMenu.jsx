@@ -1,6 +1,7 @@
 import React from "react";
 import "./SideMenu.scss";
 import SideMenuList from "../SideMenuList/SideMenuList";
+import SideMenuFooter from "../SideMenuFooter/SideMenuFooter";
 
 function SideMenu({ isOpen }) {
   console.log(isOpen);
@@ -10,7 +11,7 @@ function SideMenu({ isOpen }) {
         Trigger<span className="nav__side-menu-logo-pink">Tech</span>
       </h1>
     <SideMenuList/>
-     
+     <SideMenuFooter/>
     </aside>
   );
 }
