@@ -34,7 +34,14 @@
     transform: translateY(0);
   }
 
-  
+  &__side-menu-logo{
+    transition: transform 0.3s;
+        cursor: pointer;
+
+        &:hover{
+            transform: scale(1.2) translateX(8%)
+        }
+  }
 
 }
 
