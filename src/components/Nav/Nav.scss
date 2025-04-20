@@ -60,12 +60,19 @@
     position: relative;
     bottom: 5px;
     transform: rotate(130deg);
+    background-color: $pink;
 }
 
 .open-bar-1{
     position: relative;
     top: 4px;
     transform: rotate(-130deg);
+    background-color: $pink;
+}
+
+// when the menu is open change the border color to pink
+.open{
+    border-color: $pink;
 }
 
 
