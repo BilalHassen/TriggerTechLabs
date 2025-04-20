@@ -18,9 +18,7 @@ export const BurgerMenu = () => {
         <span className={`nav__burger-bar ${isOpen ? "open-bar-2" : ""}`}></span>
       </button>
 
-     <div className={`nav__menu ${isOpen ? "nav__menu-open" : ""}`}>
-        <h1>this is the menu</h1>
-      </div>
+     <SideMenu isOpen={isOpen}/>
 
       <div
         className={`nav__overlay ${isOpen ? "nav__overlay-open" : ""}`}
