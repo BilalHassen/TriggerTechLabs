@@ -1,40 +1,42 @@
-@use"../../styles/partials/variables"as *;
+@use "../../styles/partials/variables" as *;
 
-.nav{
-    &__side-menu-logo{
-        margin-top: 4rem;
-        font-size: 3rem;
-        color: white;
-        transition: transform 0.3s;
-        cursor: pointer;
+.nav {
+  &__side-menu-logo {
+    margin-top: 4rem;
+    font-size: 3rem;
+    color: white;
+    transition: transform 0.3s;
+    cursor: pointer;
 
-        &:hover{
-            transform: scale(1.2) translateX(8%)
-        }
-      }
-    
-      &__side-menu-logo-pink{
-        color: $pink;
-        font-size: 3rem;
-      }
-    
-      &__side-menu-list{
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-        transition: box-shadow 0.3s ease-in-out;
-      }
-    
-      &__side-menu-text{
-        color: white;
-        transition: 0.3s ease;
-        cursor: pointer;
-        transition: color 0.3s,transform 0.3s ;
+    &:hover {
+      transform: scale(1.2) translateX(8%);
+    }
+  }
 
-    
-        &:hover{
-            color: $pink;
-            transform:  scale(1.2) translateX(10%);
-        }
-      }
+  &__side-menu-logo-pink {
+    color: $pink;
+    font-size: 3rem;
+  }
+
+  &__side-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  &__side-menu-text {
+    color: white;
+    font-size: 1.6rem;
+    transition: 0.3s ease;
+    cursor: pointer;
+    transition:
+      color 0.3s,
+      transform 0.3s;
+
+    &:hover {
+      color: $pink;
+      transform: scale(1.2) translateX(10%);
+    }
+  }
 }

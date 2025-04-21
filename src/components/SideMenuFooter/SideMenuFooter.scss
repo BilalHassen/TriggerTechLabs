@@ -1,22 +1,20 @@
-@use "../../styles/partials/variables" as*;
-  
-.nav{
+@use "../../styles/partials/variables" as *;
 
-    &__side-menu-footer{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        height: fit-content;
+.nav {
+  &__side-menu-footer {
+    display: flex;
+    gap: 6rem;
+    align-items: center;
+    height: fit-content;
+  }
+
+  &__side-menu-icon {
+    font-size: 35px;
+    color: white; /* Adjust the color as needed */
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $pink;
     }
-
-    &__side-menu-icon{
-        font-size: 40px;
-        color: white; /* Adjust the color as needed */
-        transition: color 0.3s ease;
-
-        &:hover{
-            color: $pink;
-        }
-    }
+  }
 }
-
