@@ -4,7 +4,7 @@ import SideMenuList from "../SideMenuList/SideMenuList";
 import SideMenuFooter from "../SideMenuFooter/SideMenuFooter";
 
 function SideMenu({ isOpen }) {
-  console.log(isOpen);
+  
   return (
     <aside className={`nav__side-menu ${isOpen ? "nav__side-menu-open" : ""}`}>
       <h1 className="nav__side-menu-logo">

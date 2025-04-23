@@ -1,6 +1,11 @@
 import "./Nav.scss";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
+import { useWidth } from "../../hooks/useWidth";
 const Nav = () => {
+
+  const width = useWidth()
+  console.log(width)
+
   return (
     <>
     <header className="header">
