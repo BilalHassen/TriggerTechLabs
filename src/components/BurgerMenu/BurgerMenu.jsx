@@ -7,18 +7,24 @@ export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
 
 
+  const handleSideMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+
+
   return (
     <>
         <button
         className={`nav__burger-btn ${isOpen ? "open" : ""}`}
-        onClick={()=>setIsOpen(!isOpen)}
+        onClick={handleSideMenu}
         aria-label="Toggle menu"
       >
         <span className={`nav__burger-bar ${isOpen ? "open-bar-1" : ""}`}></span>
         <span className={`nav__burger-bar ${isOpen ? "open-bar-2" : ""}`}></span>
       </button>
 
-     <SideMenu isOpen={isOpen}/>
+     <SideMenu handleSideMenu={handleSideMenu} isOpen={isOpen}/>
 
       <div
         className={`nav__overlay ${isOpen ? "nav__overlay-open" : ""}`}

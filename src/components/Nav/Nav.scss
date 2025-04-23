@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
-    padding-top: 1rem;
+    padding-top: 1.6rem;
     width: 100%;
     
     @include mobile-medium{
@@ -52,7 +52,8 @@
         gap: .7rem;
         align-items: center; 
         cursor: pointer;
-        transition: border-color 0.3s ease;
+        opacity: 100%;
+        transition: border-color 0.3s ease,  opacity 5s ease ;
         padding: 0;
         box-sizing: border-box;
         background: transparent;
@@ -91,8 +92,10 @@
 }
 
 // when the menu is open change the border color to pink
-.open{
-    border-color: $pink;
+.open {
+   opacity: 0;
+   visibility: hidden;
+   pointer-events: hidden;
+   transition: opacity 1s ease, visibility 0s 1s; 
 }
-
 

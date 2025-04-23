@@ -5,7 +5,7 @@
     position: fixed; /* Sticks the menu relative to the viewport */
     top: 0;
     left: 0; /* Aligns the menu to the left */
-    width: 80%; /* Makes the menu span the entire width */
+    width: 100%; /* Makes the menu span the entire width */
     height: 100vh; /* Makes the menu span the entire height of the screen */
     background-color: $black; /* Dark background for overlay effect */
     z-index: 1000; /* Ensures the menu is above other elements */
