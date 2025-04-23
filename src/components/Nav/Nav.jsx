@@ -13,7 +13,7 @@ const Nav = () => {
         <h1 className="nav__logo">
           Trigger<span className="nav__logo-pink">Tech</span>
         </h1>
-        <BurgerMenu/>
+        {width >= 768 ? null : <BurgerMenu/>}
       </nav>
       </header>
     </>
