@@ -1,15 +1,43 @@
 
 import './App.scss'
-import Nav from './components/Nav/Nav'
-import LayOut from './LayOut/LayOut'
+import Home from './Pages/Home/Home';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
+
 function App() {
 
   return (
     <>
     
-    <LayOut>
-      <h1>Hello check this wrapper</h1>
-    </LayOut>
+    <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={<Home/>}
+              />
+               <Route
+                path="/projects"
+                element={""}
+              />
+              <Route
+                path="/contact"
+                element={""}
+              />
+                <Route
+                path="/case-study"
+                element={""}
+              />
+            
+             
+             
+            </Routes>
+          </Router>
     </>
   )
 }
