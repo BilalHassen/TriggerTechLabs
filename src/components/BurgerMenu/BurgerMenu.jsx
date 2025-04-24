@@ -2,6 +2,7 @@ import React from "react";
 import { useState, useEffect } from "react";
 import "./BurgerMenu.scss";
 import SideMenu from "../SideMenu/SideMenu";
+import BurgerBtn from "../BurgerBtn/BurgerBtn";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,14 +16,7 @@ export const BurgerMenu = () => {
 
   return (
     <>
-        <button
-        className={`nav__burger-btn ${isOpen ? "open" : ""}`}
-        onClick={handleSideMenu}
-        aria-label="Toggle menu"
-      >
-        <span className={`nav__burger-bar ${isOpen ? "open-bar-1" : ""}`}></span>
-        <span className={`nav__burger-bar ${isOpen ? "open-bar-2" : ""}`}></span>
-      </button>
+      <BurgerBtn isOpen={isOpen} onClick={handleSideMenu} buttonClass={"nav__burger-btn"} barClass={"nav__burger-bar"}/>
 
      <SideMenu handleSideMenu={handleSideMenu} isOpen={isOpen}/>
 

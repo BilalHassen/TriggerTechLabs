@@ -1,0 +1,85 @@
+@use "../../styles/partials/variables" as*;
+@use "../../styles/partials/mixins" as*;
+
+.nav{
+  
+
+    // styling for both instances of the burger btn
+    &__burger-btn, &__side-burger-btn{
+        position: relative;
+        z-index: 1001;
+        border-radius: 40px;
+        height: 4rem;
+        width: 4rem;
+        background-color: $mainBgColour;
+        border: 1px solid grey;
+        display: flex;
+        flex-direction: column; 
+        justify-content: center;
+        gap: .7rem;
+        align-items: center; 
+        cursor: pointer;
+        opacity: 100%;
+        transition: border-color 0.3s ease,  opacity 5s ease ;
+        padding: 0;
+        box-sizing: border-box;
+        background: transparent;
+
+        &:hover{
+            border-color: $pink;
+            .nav__burger-bar{
+                background-color: $pink;
+            }
+            .nav__side-burger-bar{
+                background-color: $pink;
+            }
+        }
+    }
+
+
+    &__burger-bar{
+        height: 2px;
+        width: 50%;  
+        background-color: white; 
+        transition: background-color 0.3s ease;
+        transition: transform 0.3s
+    }
+
+    &__side-burger-bar{
+        background-color: white; 
+        height: 2px;
+        width: 50%;  
+        transition: background-color 10s ease;
+        transition: transform 0.3s
+    }
+
+    // when the menu is open change the border color to pink
+&__burger-btn-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: hidden;
+    transition: opacity 1s ease, visibility 0s 1s; 
+ }
+ 
+
+&__side-burger-bar-open-bar-1{
+    position: relative;
+    top: 3px;
+    transform: rotate(130deg);
+    
+}
+
+&__side-burger-bar-open-bar-2{
+    position: relative;
+    bottom: 6px;
+    transform: rotate(-130deg);
+    
+}
+
+
+}
+
+
+
+
+

@@ -2,7 +2,7 @@ import "./Nav.scss";
 import { BurgerMenu } from "../BurgerMenu/BurgerMenu";
 import { useWidth } from "../../hooks/useWidth";
 import NavLargeMenu from "../NavLargeMenu/NavLargeMenu";
-
+import BurgerBtn from "../BurgerBtn/BurgerBtn";
 
 const Nav = () => {
 
