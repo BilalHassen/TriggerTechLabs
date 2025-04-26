@@ -33,13 +33,13 @@
   }
 
   @include desktop-small {
-    
+    width: 80%;
     max-width: 120rem;
   }
 
   @include desktop-medium{
- 
-    max-width: 120rem;
+    width: 82%;
+    max-width: 130rem;
   }
 
   @include desktop-large {
@@ -57,8 +57,12 @@
         font-size: 3rem;
     }
 
+    @include tablet-medium{
+      font-size: 3.5rem;
+  }
+
     @include desktop-small{
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
 
     &:hover {
@@ -74,8 +78,12 @@
         font-size: 3rem;
     }
 
+    @include tablet-medium{
+      font-size: 3.5rem;
+  }
+
     @include desktop-small{
-        font-size: 3.5rem;
+        font-size: 3.8rem;
     }
   }
 

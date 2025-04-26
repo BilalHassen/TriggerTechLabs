@@ -11,9 +11,22 @@
 
       // increase the width of the nav items
       // finish styling the rest
-      @include desktop-small{
-        max-width: 500px;
+
+      @include tablet-large{
+        width: 100%;
+        max-width: 450px;
       }
+
+      @include desktop-small{
+        width: 100%;
+        max-width: 550px;
+      }
+
+      @include desktop-large{
+        width: 100%;
+        max-width: 600px;
+      }
+     
     }
 
     &__links-container {
@@ -39,9 +52,15 @@
       font-size: 1.8rem;
   }
 
-  @include tablet-medium{
+  @include tablet-large{
     font-size: 2rem;
 }
+
+  @include desktop-small{
+    font-size: 2.2rem;
+  }
+
+  
 
 
       &:hover{
