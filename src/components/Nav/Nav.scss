@@ -21,22 +21,30 @@
 
   @include tablet-medium {
     margin: 0 auto;
-    padding-top: 2.4rem;
+    padding: 2.4rem 2.4rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
     max-width: 90rem;
   }
 
   @include tablet-large {
-    padding-top: 3rem;
+    padding-top: 3rem ;
     max-width: 110rem;
   }
 
   @include desktop-small {
-    padding-top: 3rem;
+    
+    max-width: 120rem;
+  }
+
+  @include desktop-medium{
+ 
     max-width: 120rem;
   }
 
   @include desktop-large {
-    max-width: 180rem;
+    width: 81%;
+    max-width: 300rem;
   }
 
   &__logo {
@@ -44,6 +52,14 @@
     color: white;
     transition: transform 0.3s;
     cursor: pointer;
+
+    @include tablet-small{
+        font-size: 3rem;
+    }
+
+    @include desktop-small{
+        font-size: 3.5rem;
+    }
 
     &:hover {
       transform: scale(1.2) translateX(15%);
@@ -53,6 +69,14 @@
   &__logo-pink {
     color: $pink;
     font-size: 2.8rem;
+
+    @include tablet-small{
+        font-size: 3rem;
+    }
+
+    @include desktop-small{
+        font-size: 3.5rem;
+    }
   }
 
   &__burger-btn {
