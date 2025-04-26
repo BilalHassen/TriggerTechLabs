@@ -20,7 +20,11 @@ function SideMenu({ isOpen, handleSideMenu }) {
 
 
   return (
+    <>
+  
+    
     <aside ref={sideMenuRef} className={`nav__side-menu ${isOpen ? "nav__side-menu-open" : ""}`}>
+      <div className={`nav__animation-container ${isOpen ? "nav__animation-container-open" : ""}`}>
       <div className="nav__side-menu-container">
       <h1 className="nav__side-menu-logo">
         Trigger<span className="nav__side-menu-logo-pink">Tech</span>
@@ -29,8 +33,10 @@ function SideMenu({ isOpen, handleSideMenu }) {
       </div>
     <SideMenuList/>
      <SideMenuFooter/>
-     
+     </div>
     </aside>
+
+    </>
     
   );
 }

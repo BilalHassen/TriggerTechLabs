@@ -11,6 +11,7 @@
     z-index: 1000; /* Ensures the menu is above other elements */
     transform: translateY(100%);
     transition: transform 1s ease-in-out;
+
     padding-left: 1.6rem;
     padding-right: 1.6rem;
     display: flex;
@@ -21,6 +22,23 @@
   &__side-menu-open{
     transform: translateY(0);
   }
+
+  &__animation-container {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 3s ease, visibility 3s ease;
+    transition-delay: 0s;
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+  }
+
+  &__animation-container-open {
+    opacity: 1;
+    visibility: visible;
+    transition-delay: 1s;
+  }
+
 
   &__overlay{
     position: fixed; /* Sticks the menu relative to the viewport */
