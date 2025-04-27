@@ -1,12 +1,43 @@
 
 import './App.scss'
+import Home from './Pages/Home/Home';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+
 
 function App() {
 
   return (
     <>
-    <h1>Hi, Im Bilal Hassen</h1><br></br>
-    <p>and this is TriggerTech Labs <br></br>MotherFucker!</p>
+    
+    <Router>
+            <Routes>
+              <Route
+                path="/"
+                element={<Home/>}
+              />
+               <Route
+                path="/projects"
+                element={""}
+              />
+              <Route
+                path="/contact"
+                element={""}
+              />
+                <Route
+                path="/case-study"
+                element={""}
+              />
+            
+             
+             
+            </Routes>
+          </Router>
     </>
   )
 }
