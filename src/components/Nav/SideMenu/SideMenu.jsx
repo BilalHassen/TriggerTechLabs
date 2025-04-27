@@ -7,24 +7,11 @@ import BurgerBtn from '../BurgerBtn/BurgerBtn';
 import { useRef } from "react";
 
 function SideMenu({ isOpen, handleSideMenu }) {
-  
-  const sideMenuRef = useRef()
-
-  useEffect(()=>{
-
-   
-
-  },[])
-
-  console.log(isOpen)
-
-
-
   return (
     <>
   
     
-    <aside ref={sideMenuRef} className={`nav__side-menu ${isOpen ? "nav__side-menu-open" : ""}`}>
+    <aside className={`nav__side-menu ${isOpen ? "nav__side-menu-open" : ""}`}>
       <div className={`nav__animation-container ${isOpen ? "nav__animation-container-open" : ""}`}>
       <div className="nav__side-menu-container">
       <h1 className="nav__side-menu-logo">

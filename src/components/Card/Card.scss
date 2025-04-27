@@ -1,0 +1,12 @@
+@use "../../styles/partials/variables" as *;
+
+.card{
+    border: 1px solid grey;
+    background-color: $card-background;
+    height: 100px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}

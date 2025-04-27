@@ -1,8 +1,10 @@
 import React from 'react'
-
-function Card() {
+import "./Card.scss"
+function Card({children, title, className, imgSrc}) {
   return (
-    <div>Card</div>
+    <article className={`card ${className}`}>
+     {children}
+    </article>
   )
 }
 

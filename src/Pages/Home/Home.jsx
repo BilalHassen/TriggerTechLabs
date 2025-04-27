@@ -5,6 +5,8 @@ export default function Home() {
     <>
     <LayOut>
         <h1>Home page content will go here...</h1>
+       
+  
     </LayOut>
     </>
   )
