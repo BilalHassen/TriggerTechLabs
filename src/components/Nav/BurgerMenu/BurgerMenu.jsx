@@ -1,8 +1,8 @@
 import React from "react";
 import { useState, useEffect } from "react";
 import "./BurgerMenu.scss";
-import SideMenu from "@components/SideMenu/SideMenu";
-import BurgerBtn from "@components/BurgerBtn/BurgerBtn";
+import SideMenu from "../SideMenu/SideMenu";
+import BurgerBtn from "../BurgerBtn/BurgerBtn"
 
 
 export const BurgerMenu = () => {

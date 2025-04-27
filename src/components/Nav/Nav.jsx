@@ -1,8 +1,8 @@
 import "./Nav.scss";
-import { BurgerMenu } from '@components/BurgerMenu/BurgerMenu';
+import { BurgerMenu } from './BurgerMenu/BurgerMenu';
 import { useWidth } from '@hooks/useWidth';
-import NavLargeMenu from '@components/NavLargeMenu/NavLargeMenu';
-import BurgerBtn from '@components/BurgerBtn/BurgerBtn';
+import NavLargeMenu from './NavLargeMenu/NavLargeMenu';
+
 
 
 const Nav = () => {
