@@ -1,8 +1,9 @@
 import React, { useEffect } from "react";
 import "./SideMenu.scss";
-import SideMenuList from "../SideMenuList/SideMenuList";
-import SideMenuFooter from "../SideMenuFooter/SideMenuFooter";
-import BurgerBtn from "../BurgerBtn/BurgerBtn";
+import SideMenuList from '@components/SideMenuList/SideMenuList';
+import SideMenuFooter from '@components/SideMenuFooter/SideMenuFooter';
+import BurgerBtn from '@components/BurgerBtn/BurgerBtn';
+
 import { useRef } from "react";
 
 function SideMenu({ isOpen, handleSideMenu }) {
