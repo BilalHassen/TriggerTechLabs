@@ -6,7 +6,7 @@ function LayOut({children}) {
   return (
     <div className='layout'>
         <Nav/>
-        <main className='main-content'>{children}</main>
+        <div className='layout-wrapper'>{children}</div>
     </div>
   )
 }
