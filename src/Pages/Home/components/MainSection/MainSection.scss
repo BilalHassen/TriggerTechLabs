@@ -1,0 +1,54 @@
+
+.home-main{
+    margin-top: 6rem;
+
+
+    &__card{
+        display: flex;  
+        flex-direction: column;
+        gap: 4rem;
+    }
+
+    &__text-box{
+        min-height: 7rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+
+    &__title{
+        font-size: 3rem;
+    }
+
+    &__animated-text{
+        font-size: 3rem;  /* Adjust the font size */
+        font-weight: bold; /* Optional: Make the text bold */
+        background: linear-gradient(91deg, #f70354 0%, #0074fd 100%); /* Define the gradient */
+        -webkit-background-clip: text; /* Clip the background to the text (important for webkit browsers) */
+        color: transparent; /* Make the text itself transparent so the gradient*/
+        
+        
+    }
+
+    &__card{
+        color: white;
+    }
+
+    // styling for the icons container
+    &__icons-container{
+        display: flex;
+        gap: 2rem;
+    }
+
+    &__icon-flex{
+       
+    }
+
+    &__socials-text{
+        color: $icon-color;
+        font-size: 1.6rem;
+        font-weight: 900;
+        padding-bottom: 1.5rem;
+    }
+}
