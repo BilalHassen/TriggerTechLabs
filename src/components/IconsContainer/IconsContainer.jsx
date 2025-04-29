@@ -7,31 +7,42 @@ function IconsContainer({ className, iconClass }) {
     <div className={`icons-container ${className}`}>
       <a
         href="https://github.com/BilalHassen"
+        className="icons-container__link"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit my GitHub profile"
       >
-        <FaGithub className={`${iconClass} icons-container__github`} />
+        <FaGithub className="icons-container__icon" />
       </a>
+
       <a
         href="https://www.linkedin.com/in/bilal-hassen/"
+        className="icons-container__link"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit my LinkedIn profile"
       >
-        <FaLinkedin className={`${iconClass} icons-container__linkedin`} />
+        <FaLinkedin className="icons-container__icon" />
       </a>
+
       <a
         href="https://instagram.com/your-username"
+        className="icons-container__link"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Visit my Instagram profile"
       >
-        <FaInstagram className={`${iconClass} icons-container__instagram`} />
+        <FaInstagram className="icons-container__icon" />
       </a>
+
       <a
-        href="mailto:your-email@example.com"
+        href="mailto:bilalhass977@gmail.com"
+        className="icons-container__link"
         target="_blank"
         rel="noopener noreferrer"
+        aria-label="Send me an email"
       >
-        <FaEnvelope className={`${iconClass} icons-container__email`} />
+        <FaEnvelope className="icons-container__icon" />
       </a>
     </div>
   );

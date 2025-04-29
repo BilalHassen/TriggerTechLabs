@@ -3,6 +3,7 @@
     margin-top: 6rem;
 
 
+    // card instance
     &__card{
         display: flex;  
         flex-direction: column;
@@ -11,20 +12,31 @@
         padding: 2rem 1.6rem 2rem 1.6rem;
 
         @include mobile-large{
-            padding: 4rem 3rem 4rem 3rem;
+            padding: 5rem 3rem 5rem 3rem;
+            gap: 4rem;
+            max-width: 73.6rem;
         }
     }
 
+    // box for title and animated text
     &__text-box{
         min-height: 7rem;
         display: flex;
         flex-direction: column;
         gap: 1rem;
+
+        @include tablet-small{
+            min-height: 8rem;
+        }
     }
 
 
     &__title{
         font-size: 2.5rem;
+
+        @include tablet-small{
+            font-size: 3.4rem;
+        }
     }
 
     &__animated-text{
@@ -34,6 +46,9 @@
         -webkit-background-clip: text; /* Clip the background to the text (important for webkit browsers) */
         color: transparent; /* Make the text itself transparent so the gradient*/
         
+        @include tablet-small{
+            font-size: 3.4rem;
+        }
         
     }
 
@@ -41,28 +56,55 @@
         color: white;
     }
 
+    // box for icon and "im on text"
+    &__icon-flex{
+        display: flex;
+        align-items: center;
+        gap: 4rem;
+    }
+
     // styling for the icons container
     &__icons-container{
         display: flex;
         gap: 2rem;
+
+        @include tablet-small{
+            gap: 2.5rem;
+        }
     }
 
+  
+ 
+
+    // wrapper for icons and text at the end of card
     &__flex-wrapper{
        display: flex;
        flex-direction: column;
-       justify-content: center;
-       gap: 2rem;
+       gap: 3rem;
 
+       @include tablet-small{
+        width: 100%;
+        flex-direction: row;
+        gap: 2rem;
+
+       }
        
     }
 
+    // im on text itself
     &__socials-text{
         color: $icon-color;
         font-size: 1.6rem;
         font-weight: 900;
         padding-bottom: 1.5rem;
+
+        @include tablet-small{
+            font-size: 1.6rem;
+            padding: 0;
+        }
     }
 
+    // box for bio text
     &__biography-box{
         border-top: 1px solid $icon-color;
         border-bottom: 1px solid $icon-color;
@@ -76,12 +118,14 @@
         font-size: 1.6rem;
     }
 
+    // boxes for footer of card icons
     &__location-box, &__mail-box, &__resume-box{
         display: flex;
         align-items: center;
         gap: 0.5rem;
     }
 
+    // footer icons
     &__marker-icon, &__mail-icon, &__download-icon{
         height: 15px;
         width: 15px;
@@ -91,6 +135,10 @@
     &__icon-text{
         font-size: 1.4rem;
         color: $icon-color;
+
+      @include tablet-small{
+        font-size: 1.5rem;
+      }
     }
 
    
