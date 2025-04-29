@@ -1,51 +1,78 @@
-import React from 'react'
-import "./MainSection.scss"
-import Card from '../../../../components/Card/Card'
-import IconsContainer from '@components/IconsContainer/IconsContainer'
-import Typed from "typed.js"
-import  { useEffect, useRef } from 'react';
+import React, { useEffect, useRef } from "react";
+import { FaMapMarkerAlt, FaEnvelope, FaDownload } from "react-icons/fa";
 
+import "./MainSection.scss";
+import Card from "../../../../components/Card/Card";
+import IconsContainer from "@components/IconsContainer/IconsContainer";
+import Typed from "typed.js";
 
+const JOB_TITLES = [
+  "Full-stack Developer",
+  "Front-end Developer",
+  "Web Developer",
+];
+
+const BIOGRAPHY = `I'm a passionate Full-stack Developer with a strong foundation in
+building modern, scalable web applications. I specialize in both
+front-end and back-end development, creating seamless digital
+experiences from concept to deployment. With a focus on clean code,
+performance, and user-centered design, I bring ideas to life through
+technology.`;
 
 function MainSection() {
+  const animatedTextEl = useRef(null);
 
-  const animatedTextEl = useRef(null); // Reference to the DOM element
   useEffect(() => {
-    // Initialize Typed.js when the component mounts
-    const options = {
-      strings: ["Full-stack Developer", "Front-end Developer", "Web Developer"],
-      typeSpeed: 50,  // Speed of typing in ms
-      backSpeed: 25,  // Speed of backspacing in ms
-      backDelay: 1000, // Delay before starting to backspace
-      startDelay: 500, // Delay before starting typing
-      loop: true, // Whether to loop the animation
-      showCursor: false, // Show cursor
-    };
-
-    // Initialize Typed.js with the reference to the element and options
-    const typed = new Typed(animatedTextEl.current, options);
-
-    // Cleanup the Typed.js instance when the component unmounts
-    return () => {
-      typed.destroy();
-    };
-  }, []); // Empty dependency array ensures this runs once on mount
-
+    const typed = new Typed(animatedTextEl.current, {
+      strings: JOB_TITLES,
+      typeSpeed: 50,
+      backSpeed: 25,
+      backDelay: 1000,
+      startDelay: 500,
+      loop: true,
+      showCursor: false,
+    });
+    return () => typed.destroy();
+  }, []);
 
   return (
-    <main className='home-main'>
-      <Card className={"home-main__card"}>
-        <div className='home-main__text-box'>
-        <h1 className='home-main__title'>Hi Im Bilal,</h1>
-        <p ref={animatedTextEl} className='home-main__animated-text'></p>
+    <main className="home-main">
+      <Card className="home-main__card">
+        <div className="home-main__text-box">
+          <h1 className="home-main__title">Hi, I'm Bilal,</h1>
+          <p ref={animatedTextEl} className="home-main__animated-text" />
         </div>
-        <div className='home-main__icon-flex'>
-          <p className='home-main__socials-text'>I'm on</p>
-        <IconsContainer className={"home-main__icons-container"} iconClass={"home-main__icons"}/>
+        <div className="home-main__icon-flex">
+          <p className="home-main__socials-text">I'm on</p>
+          <IconsContainer
+            className="home-main__icons-container"
+            iconClass="home-main__icons"
+          />
+        </div>
+        <div className="home-main__biography-box">
+          <p className="home-main__biography">{BIOGRAPHY}</p>
+        </div>
+        <div className="home-main__footer">
+          <div className="home-main__flex-wrapper">
+            <div className="home-main__location-box">
+              <FaMapMarkerAlt className="home-main__marker-icon" />
+              <p className="home-main__icon-text">
+                Lives in Toronto Ontario, Canada
+              </p>
+            </div>
+            <div className="home-main__mail-box">
+              <FaEnvelope className="home-main__mail-icon" />
+              <p className="home-main__icon-text">bilalhass977@gmail.com</p>
+            </div>
+            <div className="home-main__resume-box">
+              <p className="home-main__icon-text">Download Resume</p>
+              <FaDownload className="home-main__download-icon" />
+            </div>
+          </div>
         </div>
       </Card>
     </main>
-  )
+  );
 }
 
-export default MainSection
+export default MainSection;

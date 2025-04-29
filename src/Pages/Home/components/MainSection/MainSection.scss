@@ -6,7 +6,7 @@
     &__card{
         display: flex;  
         flex-direction: column;
-        gap: 4rem;
+        gap: 2rem;
     }
 
     &__text-box{
@@ -18,11 +18,11 @@
 
 
     &__title{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
 
     &__animated-text{
-        font-size: 3rem;  /* Adjust the font size */
+        font-size: 2.5rem;  /* Adjust the font size */
         font-weight: bold; /* Optional: Make the text bold */
         background: linear-gradient(91deg, #f70354 0%, #0074fd 100%); /* Define the gradient */
         -webkit-background-clip: text; /* Clip the background to the text (important for webkit browsers) */
@@ -41,8 +41,11 @@
         gap: 2rem;
     }
 
-    &__icon-flex{
-       
+    &__flex-wrapper{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       gap: 2rem;
     }
 
     &__socials-text{
@@ -51,4 +54,33 @@
         font-weight: 900;
         padding-bottom: 1.5rem;
     }
+
+    &__biography-box{
+        border-top: 1px solid $icon-color;
+        border-bottom: 1px solid $icon-color;
+        line-height: 2.4rem;
+        font-size: 2rem;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    &__location-box, &__mail-box, &__resume-box{
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    &__marker-icon, &__mail-icon, &__download-icon{
+        height: 15px;
+        width: 15px;
+        color: $icon-color
+    }
+
+    &__icon-text{
+        font-size: 1.4rem;
+        color: $icon-color;
+    }
+
+   
+
 }
