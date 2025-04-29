@@ -4,6 +4,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaDownload } from "react-icons/fa";
 import "./MainSection.scss";
 import Card from "../../../../components/Card/Card";
 import IconsContainer from "@components/IconsContainer/IconsContainer";
+import MySkills from "../Myskills/MySkills";
 import Typed from "typed.js";
 
 const JOB_TITLES = [
@@ -37,6 +38,7 @@ function MainSection() {
 
   return (
     <main className="home-main">
+      {/*move card to its own component */}
       <Card className="home-main__card">
         <div className="home-main__text-box">
           <h1 className="home-main__title">Hi, I'm Bilal,</h1>
@@ -71,6 +73,9 @@ function MainSection() {
           </div>
         </div>
       </Card>
+
+    <MySkills/>
+
     </main>
   );
 }

@@ -1,14 +1,20 @@
 
 .home-main{
     margin-top: 6rem;
-
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    @include tablet-medium{
+        flex-direction: row;
+        gap: 2rem;
+    }
 
     // card instance
     &__card{
         display: flex;  
         flex-direction: column;
         gap: 2rem;
-        padding: 1.6rem;
+        
         padding: 2rem 1.6rem 2rem 1.6rem;
 
         @include mobile-large{

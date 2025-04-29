@@ -1,0 +1,26 @@
+
+
+.my-skills{
+    
+      // card instance
+      &__card{
+        display: flex;  
+        flex-direction: column;
+        gap: 2rem;
+        padding: 1.6rem;
+        padding: 2rem 1.6rem 2rem 1.6rem;
+
+       
+    }
+
+    &__title{
+        border-bottom: 1px solid grey;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+    }
+
+    &__title{
+        color: white;
+
+    }
+}
