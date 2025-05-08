@@ -16,7 +16,7 @@
        
     }
 
-    &__title{
+    &__heading{
         border-bottom: 1px solid grey;
         font-size: 2rem;
         padding-bottom: 2rem;
@@ -26,4 +26,27 @@
         color: white;
 
     }
+
+    // STYLING FOR EACH SKILLS CONTAINERS
+
+    &__container{
+     display: flex;
+     flex-direction: column;
+     gap: 2rem;
+    
+    }
+
+    &__wrapper{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__progress-bar{
+        width: var(--progress-width);
+        background-color: red;
+        height: 0.3rem; 
+        border-radius: 4px;
+        background: linear-gradient(to right, #5af68e, #33fe00);
+    }
+
 }
