@@ -7,6 +7,7 @@
     @include tablet-medium{
         flex-direction: row;
         gap: 2rem;
+
     }
 
     // card instance
@@ -20,8 +21,12 @@
         @include mobile-large{
             padding: 5rem 3rem 5rem 3rem;
             gap: 4rem;
-            max-width: 73.6rem;
+           
         }
+        @include tablet-medium{
+            width: 70%;
+        }
+        
     }
 
     // box for title and animated text
@@ -65,8 +70,13 @@
     // box for icon and "im on text"
     &__icon-flex{
         display: flex;
-        align-items: center;
-        gap: 4rem;
+        flex-direction: column;
+       
+        @include tablet-small{
+            flex-direction: row;
+            align-items: center;
+            gap: 4rem;
+        }
     }
 
     // styling for the icons container

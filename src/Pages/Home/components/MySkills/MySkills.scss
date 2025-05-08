@@ -2,6 +2,9 @@
 
 .my-skills{
     
+    @include tablet-medium{
+        width: 40%;
+    }
       // card instance
       &__card{
         display: flex;  
