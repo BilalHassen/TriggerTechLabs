@@ -4,7 +4,7 @@ import { FaMapMarkerAlt, FaEnvelope, FaDownload } from "react-icons/fa";
 import "./MainSection.scss";
 import Card from "../../../../components/Card/Card";
 import IconsContainer from "@components/IconsContainer/IconsContainer";
-import MySkills from "../Myskills/MySkills";
+import MySkills from "../MySkills/MySkills";
 import Typed from "typed.js";
 
 const JOB_TITLES = [
