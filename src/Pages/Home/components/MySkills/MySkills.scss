@@ -3,23 +3,28 @@
 .my-skills{
     
     @include tablet-medium{
-        width: 40%;
+        width: 50%;
     }
       // card instance
       &__card{
         display: flex;  
         flex-direction: column;
-        gap: 2rem;
-        padding: 1.6rem;
-        padding: 2rem 1.6rem 2rem 1.6rem;
+        gap: 3rem;
+        
+        padding: 4rem 2rem 4rem 2rem;
 
-       
+        @include mobile-large{
+            padding: 5rem 3rem 5rem 3rem;
+            gap: 4rem;
+           
+        }
     }
 
     &__heading{
         border-bottom: 1px solid grey;
         font-size: 2rem;
         padding-bottom: 2rem;
+        color: white
     }
 
     &__title{
@@ -43,10 +48,40 @@
 
     &__progress-bar{
         width: var(--progress-width);
-        background-color: red;
         height: 0.3rem; 
         border-radius: 4px;
-        background: linear-gradient(to right, #5af68e, #33fe00);
+        background: linear-gradient(to right, #02db4a, #33fe00);
     }
 
+    &__progress-track {
+        background-color: #494949; // light gray base bar
+        height: 0.3rem;
+        width: 100%;
+        border-radius: 4px;
+        overflow: hidden; // keeps the fill inside
+        position: relative;
+      }
+    &__percentage{
+        color: #494949;
+        font-size: 1.4rem;
+    } 
+    &__title{
+        font-size: 1.4rem;
+    }
+
+}
+// classes for each skills color
+.pink{
+    background: linear-gradient(to right, #fe01cc, #00c3fe);
+}
+
+.blue{
+    background: linear-gradient(to right, #00c3fe, #fe01cc);
+}
+.red{
+    background: linear-gradient(to right, #fef100, #fe0101);
+}
+
+.yellow{
+    background: linear-gradient(to right, #fef100, );
 }

@@ -11,15 +11,35 @@ function MySkills() {
         <h1 className="my-skills__heading">
             My Special Skills
         </h1>
-        <SkillContainer title={"Custom Website"}
+        <SkillContainer title={"Custom Website Development"}
         percentage={"100%"}
         prefixClass={"my-skills"}
         progressWidth={100}
+        color={"green"}
         />
-         <SkillContainer title={"JS"}
-        percentage={"70%"}
+         <SkillContainer title={"Responsive Layouts"}
+        percentage={"90%"}
         prefixClass={"my-skills"}
-        progressWidth={70}
+        progressWidth={90}
+        color={"pink"}
+        />
+         <SkillContainer title={"Landing Page Development"}
+        percentage={"100%"}
+        prefixClass={"my-skills"}
+        progressWidth={100}
+        color={"blue"}
+        />
+         <SkillContainer title={"Contact Forms & Email Integration"}
+        percentage={"88%"}
+        prefixClass={"my-skills"}
+        progressWidth={88}
+        color={"yellow"}
+        />
+         <SkillContainer title={"Clear Communication"}
+        percentage={"96%"}
+        prefixClass={"my-skills"}
+        progressWidth={96}
+        color={"red"}
         />
       </Card>
     </div>
