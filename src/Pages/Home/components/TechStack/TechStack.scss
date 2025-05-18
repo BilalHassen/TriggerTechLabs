@@ -6,5 +6,25 @@
     row-gap: 1.6rem; // vertical space
     column-gap: 1.6rem; // horizontal space
 
-  /* or */
+    &__title{
+        color: white;
+        text-align: center;
+        font-size: 4rem;
+    }
+
+    &__colour-bar{
+        background: linear-gradient(to right, #fe01cc, #00c3fe);
+        height: 4px;
+        border-radius: 8px;
+        width: 70%;
+        margin-bottom: 4rem;
+    }
+
+    &__divider{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+    }
+
 }
