@@ -8,8 +8,15 @@
         display: flex;
         flex-direction: row;
         gap: 2rem;
-
     }
+
+    @include tablet-medium{
+        gap: 4rem;
+    }
+
+    
+
+   
 
     // card instance
     &__card{
@@ -30,6 +37,10 @@
 
         @include tablet-medium{
             width: 70%;
+        }
+
+        @include desktop-large{
+            width: 75%;
         }
         
     }

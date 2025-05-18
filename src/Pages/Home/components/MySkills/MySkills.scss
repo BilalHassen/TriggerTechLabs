@@ -3,8 +3,23 @@
 .my-skills{
     
     @include tablet-medium{
-        width: 50%;
+        width: 35%;
     }
+
+    @include tablet-large{
+        width: 30%;
+    }
+
+    @include desktop-small{
+        width: 30%;
+    }
+
+    @include desktop-medium{
+        width: 30%;
+    }
+
+  
+   
       // card instance
       &__card{
         display: flex;  
@@ -17,6 +32,10 @@
             padding: 5rem 3rem 5rem 3rem;
             gap: 4rem;
            
+        }
+
+        @include desktop-large{
+            height: 100%;
         }
     }
 
