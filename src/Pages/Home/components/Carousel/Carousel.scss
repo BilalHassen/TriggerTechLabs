@@ -1,0 +1,32 @@
+.home__carousel {
+    overflow: hidden;
+    padding: 2rem 0;
+
+  }
+  
+  .carousel-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 15s linear infinite; // animation runs 20s constant speed and infite
+    width: max-content;
+  }
+  
+  
+  .carousel-item {
+    flex: 0 0 auto;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%); // move the track to the left
+    }
+  }

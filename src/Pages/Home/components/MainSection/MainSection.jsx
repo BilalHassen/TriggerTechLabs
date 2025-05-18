@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaDownload } from "react-icons/fa";
-
+import Carousel from "../Carousel/Carousel";
 import "./MainSection.scss";
 import Card from "../../../../components/Card/Card";
 import IconsContainer from "@components/IconsContainer/IconsContainer";
@@ -37,6 +37,7 @@ function MainSection() {
   }, []);
 
   return (
+    <>
     <main className="home-main">
       {/*move card to its own component */}
       <Card className="home-main__card">
@@ -75,8 +76,9 @@ function MainSection() {
       </Card>
 
     <MySkills/>
-
     </main>
+    <Carousel/>
+    </>
   );
 }
 
