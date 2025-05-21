@@ -69,7 +69,11 @@
 
     @include desktop-small{
         font-size: 3.8rem;
-    }
+    } 
+    
+    @include desktop-large{
+      font-size: 5rem;
+  }
 
     &:hover {
       transform: scale(1.2) translateX(15%);
@@ -91,6 +95,10 @@
     @include desktop-small{
         font-size: 3.8rem;
     }
+
+    @include desktop-large{
+      font-size: 5rem;
+  }
   }
 
   &__burger-btn {

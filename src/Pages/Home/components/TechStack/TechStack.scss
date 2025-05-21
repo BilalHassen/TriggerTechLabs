@@ -1,3 +1,13 @@
+.tech-stack-section{
+    @include desktop-large{
+        max-width: 1440px;
+        margin: 0 auto;
+        width: 100%
+    }
+   
+}
+
+
 
 .tech-stack{
     display: grid;
@@ -6,10 +16,27 @@
     row-gap: 1.6rem; // vertical space
     column-gap: 1.6rem; // horizontal space
 
+
+    @include tablet-small{
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 2.5rem; // vertical space
+    column-gap: 2.5rem; // horizontal space
+    }
+
+    @include desktop-large{
+        grid-template-columns: repeat(5, 1fr);
+        row-gap: 4rem; // vertical space
+    column-gap: 4rem; // horizontal space
+    }
+
     &__title{
         color: white;
         text-align: center;
         font-size: 4rem;
+
+        @include desktop-large{
+            font-size: 5rem;
+        }
     }
 
     &__colour-bar{
@@ -18,6 +45,16 @@
         border-radius: 8px;
         width: 70%;
         margin-bottom: 4rem;
+
+        @include tablet-medium{
+            width: 60%;
+        }
+
+        @include desktop-large{
+            margin-bottom: 6rem;
+        }
+
+      
     }
 
     &__divider{
