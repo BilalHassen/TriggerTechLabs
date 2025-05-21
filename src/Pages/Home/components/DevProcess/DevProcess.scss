@@ -1,0 +1,66 @@
+.dev-process{
+
+   display: grid;
+    gap: 2rem;
+
+    @include tablet-small{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    @include tablet-medium{
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    @include desktop-medium{
+        
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    &__wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center; // for centering text inside headings
+        gap: 2rem;
+    }
+
+    &__title{
+        color: white;
+        font-size: 4rem;
+    }
+
+    &__card{
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        
+    }
+
+    &__card-title{
+        font-size: 1.6rem;
+        
+    }
+
+    &__subTitle{
+        color: white;
+        font-size: 1.3rem;
+    }
+
+    &__card-wrapper{
+        display: flex;
+        align-items: center;
+        gap: .5rem;
+    }
+
+    &__icon{
+        height: 20px;
+        width: 20px;
+    }
+
+    &__description{
+        font-size: 1.3rem;
+        color: white;
+        line-height: 2rem;
+    }
+}

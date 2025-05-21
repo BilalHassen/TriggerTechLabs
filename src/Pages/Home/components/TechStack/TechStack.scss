@@ -18,7 +18,7 @@
 
 
     @include tablet-small{
-        grid-template-columns: repeat(4,1fr);
+        grid-template-columns: repeat(5,1fr);
         row-gap: 2.5rem; // vertical space
     column-gap: 2.5rem; // horizontal space
     }
@@ -39,29 +39,12 @@
         }
     }
 
-    &__colour-bar{
-        background: linear-gradient(to right, #fe01cc, #00c3fe);
-        height: 4px;
-        border-radius: 8px;
-        width: 70%;
-        margin-bottom: 4rem;
-
-        @include tablet-medium{
-            width: 60%;
-        }
-
-        @include desktop-large{
-            margin-bottom: 6rem;
-        }
-
-      
-    }
-
     &__divider{
         display: flex;
         flex-direction: column;
         gap: 2rem;
         align-items: center;
+        margin-bottom: 4rem;
     }
 
 }

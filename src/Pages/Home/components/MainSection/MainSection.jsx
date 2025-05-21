@@ -7,6 +7,7 @@ import IconsContainer from "@components/IconsContainer/IconsContainer";
 import MySkills from "../MySkills/MySkills";
 import Typed from "typed.js";
 import TechStack from "../TechStack/TechStack";
+import DevProcess from "../DevProcess/DevProcess";
 
 const JOB_TITLES = [
   "Full-stack Developer",
@@ -80,6 +81,7 @@ function MainSection() {
     </main>
     <Carousel/>
     <TechStack/>
+    <DevProcess/>
     </>
   );
 }
