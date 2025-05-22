@@ -53,10 +53,12 @@
     z-index: 999; /* Ensures the menu is above other elements */
     transform: translateY(-100%);
     transition: transform 1s ease-in-out;
+    pointer-events: none;
   }
 
   &__overlay-open {
     transform: translateY(0);
+    pointer-events: auto;
   }
 
   &__side-menu-logo {

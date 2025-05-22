@@ -1,21 +1,16 @@
 import React from "react";
 import "./SideMenuList.scss";
 
+const links = ["Projects", "Services", "Contact", "Case Study"];
+
 function SideMenuList() {
   return (
     <ul className="nav__side-menu-list">
-      <li className="nav__side-menu-item">
-        <p className="nav__side-menu-text">Projects</p>
-      </li>
-      <li className="nav__side-menu-item">
-        <p className="nav__side-menu-text">Services</p>
-      </li>
-      <li className="nav__side-menu-item">
-        <p className="nav__side-menu-text">Contact</p>
-      </li>
-      <li className="nav__side-menu-item">
-        <p className="nav__side-menu-text">Case Study</p>
-      </li>
+      {links.map((text) => (
+        <li key={text} className="nav__side-menu-item">
+          <button className="nav__side-menu-text">{text}</button>
+        </li>
+      ))}
     </ul>
   );
 }

@@ -9,11 +9,8 @@
   &__side-menu-text {
     color: white;
     font-size: 1.6rem;
-    transition: 0.3s ease;
     cursor: pointer;
-    transition:
-      color 0.3s,
-      transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 
     &:hover {
       color: $pink;
@@ -21,3 +18,4 @@
     }
   }
 }
+
