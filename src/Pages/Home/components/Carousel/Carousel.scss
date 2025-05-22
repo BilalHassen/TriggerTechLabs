@@ -1,8 +1,11 @@
 .home__carousel {
   position: relative;
   z-index: 10;
-  width: 100vw;  // Break out of the layout's horizontal padding
-  margin-left: calc(-50vw + 50%); // center the 100vw container inside a padded container
+  width: 100vw; 
+  // Make this section stretch the full width of the screen (viewport width)
+  margin-left: calc(-50vw + 50%); 
+  // Shift it left by half the screen, then right by half the container
+  // This keeps the section visually centered with the rest of the content
   overflow: hidden;
   padding: 2rem 0;
   
