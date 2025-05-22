@@ -54,7 +54,7 @@
   }
 
   &__logo {
-    font-size: 2rem;
+    font-size: 3rem;
     color: white;
     transition: transform 0.3s;
     cursor: pointer;
@@ -82,7 +82,7 @@
 
   &__logo-pink {
     color: $pink;
-    font-size: 2rem;
+    font-size: 3rem;
 
     @include tablet-small{
         font-size: 3rem;
@@ -160,3 +160,4 @@
   pointer-events: none;
   transition: opacity 1s ease, visibility 0s 1s;
 }
+

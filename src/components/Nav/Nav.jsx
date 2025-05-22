@@ -2,7 +2,7 @@ import "./Nav.scss";
 import { BurgerMenu } from './BurgerMenu/BurgerMenu';
 import { useWidth } from '@hooks/useWidth';
 import NavLargeMenu from './NavLargeMenu/NavLargeMenu';
-
+import logo from "../../../public/assets/logo.png"
 
 
 const Nav = () => {
@@ -14,6 +14,9 @@ const Nav = () => {
     <>
     <header className="header">
       <nav className="nav">
+        {/* <img className="nav__logo"
+        src={logo}
+        > */}
         <h1 className="nav__logo">
           Trigger<span className="nav__logo-pink">Tech</span>
         </h1>
