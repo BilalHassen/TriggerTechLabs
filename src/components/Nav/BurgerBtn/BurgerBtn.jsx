@@ -1,7 +1,6 @@
 import React from "react";
 import "./BurgerBtn.scss";
 function BurgerBtn({ isOpen, onClick, buttonClass, barClass }) {
-  console.log(barClass, buttonClass);
   return (
     <button
       className={`${buttonClass} ${isOpen ? `${buttonClass}-open` : ""}`}
