@@ -10,19 +10,9 @@ import TechStack from "../TechStack/TechStack";
 import DevProcess from "../DevProcess/DevProcess";
 import ContactMe from "../ContactMe/ContactMe";
 import Footer from "../../../../components/Footer/Footer";
+import { JOB_TITLES, BIOGRAPHY } from "./MainSection";
 
-const JOB_TITLES = [
-  "Full-stack Developer",
-  "Front-end Developer",
-  "Web Developer",
-];
 
-const BIOGRAPHY = `I'm a passionate Full-stack Developer with a strong foundation in
-building modern, scalable web applications. I specialize in both
-front-end and back-end development, creating seamless digital
-experiences from concept to deployment. With a focus on clean code,
-performance, and user-centered design, I bring ideas to life through
-technology.`;
 
 function MainSection() {
   const animatedTextEl = useRef(null);
@@ -72,7 +62,13 @@ function MainSection() {
                 <p className="home-main__icon-text">bilalhass977@gmail.com</p>
               </div>
               <div className="home-main__resume-box">
-                <p className="home-main__icon-text">Download Resume</p>
+                <a
+                  href="/assets/resume.pdf"
+                  download
+                  className="home-main__icon-text home-main__resume-link"
+                >
+                  <p className="home-main__icon-text">Download Resume</p>
+                </a>
                 <FaDownload className="home-main__download-icon" />
               </div>
             </div>
