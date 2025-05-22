@@ -8,6 +8,7 @@ import MySkills from "../MySkills/MySkills";
 import Typed from "typed.js";
 import TechStack from "../TechStack/TechStack";
 import DevProcess from "../DevProcess/DevProcess";
+import ContactMe from "../ContactMe/ContactMe";
 
 const JOB_TITLES = [
   "Full-stack Developer",
@@ -82,6 +83,7 @@ function MainSection() {
     <Carousel/>
     <TechStack/>
     <DevProcess/>
+    <ContactMe/>
     </>
   );
 }
