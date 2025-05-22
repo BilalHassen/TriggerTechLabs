@@ -17,10 +17,15 @@
     padding-right: 3rem;
   }
 
+  @include tablet-small{
+    gap: 8rem;
+  }
+
   @include tablet-medium {
     margin: 0 auto;
     padding: 0;
     max-width: 90rem;
+    
   }
 
   @include tablet-large {
@@ -35,12 +40,11 @@
 
   @include desktop-medium{
     width: 82%;
-    max-width: 130rem;
+    max-width: 140rem;
   }
 
   @include desktop-large {
-    width: 81%;
-    max-width: 180rem;
-    gap: 10rem;
+   
+    gap: 15rem;
   }
 }

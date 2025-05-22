@@ -1,66 +1,110 @@
-.dev-process{
+.dev-process {
+  display: grid;
+  gap: 2rem;
+  row-gap: 1.6rem; // vertical space
+  column-gap: 1.6rem; // horizontal space
+ 
 
-   display: grid;
+  @include tablet-small {
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2.5rem; // vertical space
+    column-gap: 2.5rem; // horizontal space
+  }
+
+  @include tablet-medium {
+    grid-template-columns: repeat(3, 1fr);
+    row-gap: 2rem; // vertical space
+    column-gap: 2rem; // horizontal space
+  }
+
+  @include desktop-medium {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  @include desktop-large {
+    max-width: 1440px;
+    padding-bottom: 10rem;
+    margin: 0 auto;
+    width: 100%;
+    row-gap: 3rem; // vertical space
+    column-gap: 3rem; // horizontal space
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; // for centering text inside headings
     gap: 2rem;
+  }
 
-    @include tablet-small{
-        grid-template-columns: repeat(2,1fr);
+  &__title {
+    color: white;
+    font-size: 4rem;
+
+    @include desktop-large{
+        font-size: 5rem;
+    }
+  }
+
+  &__card {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    @include tablet-medium {
+      gap: 2rem;
+    }
+   
+  }
+
+  &__card-title {
+    font-size: 1.6rem;
+
+    @include tablet-medium {
+      font-size: 2rem;
     }
 
-    @include tablet-medium{
-        grid-template-columns: repeat(3,1fr);
+    @include desktop-large{
+        font-size: 3rem;
+    }
+  }
+
+  &__subTitle {
+    color: white;
+    font-size: 1.3rem;
+    @include tablet-medium {
+      font-size: 1.6rem;
     }
 
-    @include desktop-medium{
-        
-        grid-template-columns: repeat(3,1fr);
+    @include desktop-large{
+        font-size: 2rem;
+    }
+  }
+
+  &__card-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  &__icon {
+    height: 20px;
+    width: 20px;
+  }
+
+  &__description {
+    font-size: 1.3rem;
+    color: white;
+    line-height: 2rem;
+
+    @include tablet-medium {
+      font-size: 1.5rem;
     }
 
-    &__wrapper{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center; // for centering text inside headings
-        gap: 2rem;
+    @include desktop-large{
+        font-size: 2rem;
     }
-
-    &__title{
-        color: white;
-        font-size: 4rem;
-    }
-
-    &__card{
-        padding: 2rem;
-        display: flex;
-        flex-direction: column;
-        gap: 1.5rem;
-        
-    }
-
-    &__card-title{
-        font-size: 1.6rem;
-        
-    }
-
-    &__subTitle{
-        color: white;
-        font-size: 1.3rem;
-    }
-
-    &__card-wrapper{
-        display: flex;
-        align-items: center;
-        gap: .5rem;
-    }
-
-    &__icon{
-        height: 20px;
-        width: 20px;
-    }
-
-    &__description{
-        font-size: 1.3rem;
-        color: white;
-        line-height: 2rem;
-    }
+  }
 }

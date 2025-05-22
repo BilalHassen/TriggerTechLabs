@@ -19,6 +19,11 @@
       cursor: pointer;
       }
   
+      @include tablet-small{
+        height: 150px;
+      }
+
+
       @include desktop-large {
         gap: 3rem;
         height: 180px; // slightly larger for big screens
@@ -28,6 +33,11 @@
     &__icon {
       width: 60px;
       height: 60px;
+
+      @include tablet-medium{
+        width: 70px;
+      height: 70px;
+      }
   
       @include desktop-large {
         width: 80px;
