@@ -43,13 +43,14 @@
         border-bottom: 1px solid grey;
         font-size: 2rem;
         padding-bottom: 2rem;
-        color: white
-    }
-
-    &__title{
         color: white;
 
+        @include desktop-large{
+            font-size: 3rem;
+        }
     }
+
+ 
 
     // STYLING FOR EACH SKILLS CONTAINERS
 
@@ -72,6 +73,10 @@
         background: linear-gradient(to right, #02db4a, #33fe00);
         transform: translateX(-200px);
         animation: slideIn 3s forwards ease;
+        
+        @include desktop-large{
+           height: .4rem;
+        }
 
         @keyframes slideIn {
             to {
@@ -87,15 +92,28 @@
         border-radius: 4px;
         overflow: hidden; // keeps the fill inside
         position: relative;
+
+        @include desktop-large{
+            height: .4rem;
+         }
       }
     &__percentage{
         color: #494949;
         font-size: 1.4rem;
+
+        @include desktop-large{
+            font-size: 1.6rem;
+        }
     } 
 
   
     &__title{
         font-size: 1.4rem;
+        color: white;
+
+        @include desktop-large{
+            font-size: 1.6rem;
+        }
     }
 
 }
