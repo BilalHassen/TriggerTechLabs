@@ -1,5 +1,5 @@
 .icons-container {
-    display: flex;
+  display: flex;
   &__link {
     padding: 0.6rem;
     border: 1px solid grey;
@@ -11,16 +11,16 @@
     border-radius: 50%;
     transition: 0.3s ease;
     color: $icon-color; // Define the default icon color variable
-    
+
     &:hover {
       background-color: $pink;
       color: white;
     }
-  
+
     @include tablet-small {
       height: 50px;
       width: 50px;
-      padding: .9rem;
+      padding: 0.9rem;
     }
   }
 
@@ -29,9 +29,4 @@
     height: 100%;
     color: white;
   }
-
-
 }
-  
- 
-  

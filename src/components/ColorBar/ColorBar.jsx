@@ -1,9 +1,7 @@
-import React from 'react'
-import "./ColorBar.scss"
+import React from "react";
+import "./ColorBar.scss";
 function ColorBar() {
-  return (
-    <div className='colour-bar'></div>
-  )
+  return <div className="colour-bar"></div>;
 }
 
-export default ColorBar
+export default ColorBar;

@@ -1,14 +1,15 @@
-import React from 'react'
-import "./Footer.scss"
-import IconsContainer from "../IconsContainer/IconsContainer"
+import React from "react";
+import "./Footer.scss";
+import IconsContainer from "../IconsContainer/IconsContainer";
 function Footer() {
   return (
-    <footer className='footer'>
-        <IconsContainer className="footer__icons"/>
-        <p className='footer__text'>&copy; 2025 TriggerTechLabs. All rights reserved.</p>
-
+    <footer className="footer">
+      <IconsContainer className="footer__icons" />
+      <p className="footer__text">
+        &copy; 2025 TriggerTechLabs. All rights reserved.
+      </p>
     </footer>
-  )
+  );
 }
 
-export default Footer
+export default Footer;
