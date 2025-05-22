@@ -42,50 +42,50 @@ function MainSection() {
 
   return (
     <>
-    <main className="home-main">
-      {/*move card to its own component */}
-      <Card className="home-main__card">
-        <div className="home-main__text-box">
-          <h1 className="home-main__title">Hi, I'm Bilal,</h1>
-          <p ref={animatedTextEl} className="home-main__animated-text" />
-        </div>
-        <div className="home-main__icon-flex">
-          <p className="home-main__socials-text">I'm on</p>
-          <IconsContainer
-            className="home-main__icons-container"
-            iconClass="home-main__icons"
-          />
-        </div>
-        <div className="home-main__biography-box">
-          <p className="home-main__biography">{BIOGRAPHY}</p>
-        </div>
-        <div className="home-main__footer">
-          <div className="home-main__flex-wrapper">
-            <div className="home-main__location-box">
-              <FaMapMarkerAlt className="home-main__marker-icon" />
-              <p className="home-main__icon-text">
-                Lives in Toronto Ontario, Canada
-              </p>
-            </div>
-            <div className="home-main__mail-box">
-              <FaEnvelope className="home-main__mail-icon" />
-              <p className="home-main__icon-text">bilalhass977@gmail.com</p>
-            </div>
-            <div className="home-main__resume-box">
-              <p className="home-main__icon-text">Download Resume</p>
-              <FaDownload className="home-main__download-icon" />
+      <main className="home-main">
+        {/*move card to its own component */}
+        <Card className="home-main__card">
+          <div className="home-main__text-box">
+            <h1 className="home-main__title">Hi, I'm Bilal,</h1>
+            <p ref={animatedTextEl} className="home-main__animated-text" />
+          </div>
+          <div className="home-main__icon-flex">
+            <p className="home-main__socials-text">I'm on</p>
+            <IconsContainer
+              className="home-main__icons-container"
+              iconClass="home-main__icons"
+            />
+          </div>
+          <div className="home-main__biography-box">
+            <p className="home-main__biography">{BIOGRAPHY}</p>
+          </div>
+          <div className="home-main__footer">
+            <div className="home-main__flex-wrapper">
+              <div className="home-main__location-box">
+                <FaMapMarkerAlt className="home-main__marker-icon" />
+                <p className="home-main__icon-text">
+                  Lives in Toronto Ontario, Canada
+                </p>
+              </div>
+              <div className="home-main__mail-box">
+                <FaEnvelope className="home-main__mail-icon" />
+                <p className="home-main__icon-text">bilalhass977@gmail.com</p>
+              </div>
+              <div className="home-main__resume-box">
+                <p className="home-main__icon-text">Download Resume</p>
+                <FaDownload className="home-main__download-icon" />
+              </div>
             </div>
           </div>
-        </div>
-      </Card>
+        </Card>
 
-    <MySkills/>
-    </main>
-    <Carousel/>
-    <TechStack/>
-    <DevProcess/>
-    <ContactMe/>
-    <Footer/>
+        <MySkills />
+      </main>
+      <Carousel />
+      <TechStack />
+      <DevProcess />
+      <ContactMe />
+      <Footer />
     </>
   );
 }

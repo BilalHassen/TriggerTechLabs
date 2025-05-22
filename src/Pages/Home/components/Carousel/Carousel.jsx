@@ -13,7 +13,6 @@ const carouselItems = [
   "Search Engine Optimization",
 ];
 
-
 function Carousel() {
   return (
     <div className="home__carousel">
@@ -25,10 +24,10 @@ function Carousel() {
         ))}
         {/*duplication to make it look constant */}
         {carouselItems.map((item, index) => (
-      <div className="home__carousel-item" key={`dup-${index}`}>
-        {item}
-      </div>
-    ))}
+          <div className="home__carousel-item" key={`dup-${index}`}>
+            {item}
+          </div>
+        ))}
       </div>
     </div>
   );

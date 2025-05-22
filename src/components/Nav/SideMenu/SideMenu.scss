@@ -1,5 +1,3 @@
-
-
 .nav {
   &__side-menu {
     position: fixed; /* Sticks the menu relative to the viewport */
@@ -18,14 +16,16 @@
     gap: 8rem;
   }
 
-  &__side-menu-open{
+  &__side-menu-open {
     transform: translateY(0);
   }
 
   &__animation-container {
     opacity: 0;
     visibility: hidden;
-    transition: opacity 3s ease, visibility 3s ease;
+    transition:
+      opacity 3s ease,
+      visibility 3s ease;
     transition-delay: 0s;
     display: flex;
     flex-direction: column;
@@ -38,20 +38,24 @@
     transition-delay: 1s;
   }
 
-
-  &__overlay{
+  &__overlay {
     position: fixed; /* Sticks the menu relative to the viewport */
     top: 0;
     left: 0; /* Aligns the menu to the left */
     width: 100%; /* Makes the menu span the entire width */
     height: 100vh; /* Makes the menu span the entire height of the screen */
-    background-color: rgba(65, 65, 65, .6745098039); /* Dark background for overlay effect */
+    background-color: rgba(
+      65,
+      65,
+      65,
+      0.6745098039
+    ); /* Dark background for overlay effect */
     z-index: 999; /* Ensures the menu is above other elements */
     transform: translateY(-100%);
     transition: transform 1s ease-in-out;
   }
 
-  &__overlay-open{
+  &__overlay-open {
     transform: translateY(0);
   }
 
@@ -71,15 +75,10 @@
     font-size: 3rem;
   }
 
-
-  &__side-menu-container{
+  &__side-menu-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 4rem;
   }
-
-
-
 }
-

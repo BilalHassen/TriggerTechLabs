@@ -1,11 +1,11 @@
 @use "../styles/partials/variables" as *;
 
-.layout-wrapper{
-    padding-left: 1.6rem;
-    padding-right: 1.6rem;
-    display: flex;
-    flex-direction: column;
-    gap: 4rem;
+.layout-wrapper {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
 
   @include mobile-medium {
     padding-left: 2rem;
@@ -17,7 +17,7 @@
     padding-right: 3rem;
   }
 
-  @include tablet-small{
+  @include tablet-small {
     gap: 8rem;
   }
 
@@ -25,11 +25,10 @@
     margin: 0 auto;
     padding: 0;
     max-width: 90rem;
-    
   }
 
   @include tablet-large {
-    padding-top: 3rem ;
+    padding-top: 3rem;
     max-width: 110rem;
   }
 
@@ -38,13 +37,12 @@
     max-width: 120rem;
   }
 
-  @include desktop-medium{
+  @include desktop-medium {
     width: 82%;
     max-width: 140rem;
   }
 
   @include desktop-large {
-   
     gap: 15rem;
   }
 }

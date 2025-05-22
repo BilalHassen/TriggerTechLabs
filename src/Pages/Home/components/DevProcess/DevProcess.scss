@@ -3,7 +3,6 @@
   gap: 2rem;
   row-gap: 1.6rem; // vertical space
   column-gap: 1.6rem; // horizontal space
- 
 
   @include tablet-small {
     grid-template-columns: repeat(2, 1fr);
@@ -42,8 +41,8 @@
     color: white;
     font-size: 4rem;
 
-    @include desktop-large{
-        font-size: 5rem;
+    @include desktop-large {
+      font-size: 5rem;
     }
   }
 
@@ -55,7 +54,6 @@
     @include tablet-medium {
       gap: 2rem;
     }
-   
   }
 
   &__card-title {
@@ -65,8 +63,8 @@
       font-size: 2rem;
     }
 
-    @include desktop-large{
-        font-size: 3rem;
+    @include desktop-large {
+      font-size: 3rem;
     }
   }
 
@@ -77,8 +75,8 @@
       font-size: 1.6rem;
     }
 
-    @include desktop-large{
-        font-size: 2rem;
+    @include desktop-large {
+      font-size: 2rem;
     }
   }
 
@@ -102,8 +100,8 @@
       font-size: 1.5rem;
     }
 
-    @include desktop-large{
-        font-size: 2rem;
+    @include desktop-large {
+      font-size: 2rem;
     }
   }
 }
