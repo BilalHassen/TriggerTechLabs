@@ -1,0 +1,49 @@
+.home__carousel {
+  position: relative;
+  z-index: 10;
+  width: 100vw;
+  // Make this section stretch the full width of the screen (viewport width)
+  margin-left: calc(-50vw + 50%);
+  // Shift it left by half the screen, then right by half the container
+  // This keeps the section visually centered with the rest of the content
+  overflow: hidden;
+  padding: 2rem 0;
+
+  &-track {
+    display: flex;
+    gap: 2rem;
+    animation: scroll 20s linear infinite; // animation runs 20s constant speed and infite
+    width: max-content;
+
+    @include tablet-small {
+      gap: 4rem;
+    }
+  }
+
+  &-item {
+    flex: 0 0 auto;
+    padding: 1rem 2rem;
+    background-color: #222;
+    color: white;
+    font-size: 1.4rem;
+    border-radius: 12px;
+    white-space: nowrap;
+
+    @include tablet-small {
+      font-size: 1.8rem;
+    }
+
+    @include tablet-medium {
+      font-size: 3rem;
+    }
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%); // move the track to the left
+    }
+  }
+}

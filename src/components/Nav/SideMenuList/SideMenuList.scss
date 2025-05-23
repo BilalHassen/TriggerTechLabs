@@ -1,0 +1,21 @@
+.nav {
+  &__side-menu-list {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    transition: box-shadow 0.3s ease-in-out;
+  }
+
+  &__side-menu-text {
+    color: white;
+    font-size: 1.6rem;
+    cursor: pointer;
+    transition: color 0.3s, transform 0.3s;
+
+    &:hover {
+      color: $pink;
+      transform: scale(1.2) translateX(10%);
+    }
+  }
+}
+

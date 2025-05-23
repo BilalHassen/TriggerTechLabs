@@ -1,5 +1,48 @@
 @use "../styles/partials/variables" as *;
 
-.main-content{
-    padding-left: 1.6rem;
+.layout-wrapper {
+  padding-left: 1.6rem;
+  padding-right: 1.6rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+
+  @include mobile-medium {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  @include mobile-large {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+
+  @include tablet-small {
+    gap: 8rem;
+  }
+
+  @include tablet-medium {
+    margin: 0 auto;
+    padding: 0;
+    max-width: 90rem;
+  }
+
+  @include tablet-large {
+    padding-top: 3rem;
+    max-width: 110rem;
+  }
+
+  @include desktop-small {
+    width: 80%;
+    max-width: 120rem;
+  }
+
+  @include desktop-medium {
+    width: 82%;
+    max-width: 140rem;
+  }
+
+  @include desktop-large {
+    gap: 15rem;
+  }
 }

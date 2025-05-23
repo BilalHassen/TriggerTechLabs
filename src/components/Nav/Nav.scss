@@ -1,5 +1,6 @@
-@use "../../styles/partials/variables" as *;
-@use "../../styles/partials/mixins" as *;
+.header {
+  overflow: visible;
+}
 
 .nav {
   display: flex;
@@ -8,6 +9,10 @@
   justify-content: space-between;
   padding: 1.6rem;
   width: 100%;
+  position: sticky;
+  top: 0;
+  z-index: 900;
+  background-color: $mainBgColour; // ensure it's not transparent
 
   @include mobile-medium {
     padding-left: 2rem;
@@ -28,7 +33,7 @@
   }
 
   @include tablet-large {
-    padding-top: 3rem ;
+    padding-top: 3rem;
     max-width: 110rem;
   }
 
@@ -37,32 +42,36 @@
     max-width: 120rem;
   }
 
-  @include desktop-medium{
+  @include desktop-medium {
     width: 82%;
-    max-width: 130rem;
+    max-width: 140rem;
   }
 
   @include desktop-large {
     width: 81%;
-    max-width: 300rem;
+    max-width: 180rem;
   }
 
   &__logo {
-    font-size: 2.8rem;
+    font-size: 3rem;
     color: white;
     transition: transform 0.3s;
     cursor: pointer;
 
-    @include tablet-small{
-        font-size: 3rem;
+    @include tablet-small {
+      font-size: 3rem;
     }
 
-    @include tablet-medium{
+    @include tablet-medium {
       font-size: 3.5rem;
-  }
+    }
 
-    @include desktop-small{
-        font-size: 3.8rem;
+    @include desktop-small {
+      font-size: 3.8rem;
+    }
+
+    @include desktop-large {
+      font-size: 5rem;
     }
 
     &:hover {
@@ -72,18 +81,22 @@
 
   &__logo-pink {
     color: $pink;
-    font-size: 2.8rem;
+    font-size: 3rem;
 
-    @include tablet-small{
-        font-size: 3rem;
+    @include tablet-small {
+      font-size: 3rem;
     }
 
-    @include tablet-medium{
+    @include tablet-medium {
       font-size: 3.5rem;
-  }
+    }
 
-    @include desktop-small{
-        font-size: 3.8rem;
+    @include desktop-small {
+      font-size: 3.8rem;
+    }
+
+    @include desktop-large {
+      font-size: 5rem;
     }
   }
 
@@ -102,7 +115,9 @@
     align-items: center;
     cursor: pointer;
     opacity: 100%;
-    transition: border-color 0.3s ease, opacity 5s ease;
+    transition:
+      border-color 0.3s ease,
+      opacity 5s ease;
     padding: 0;
     box-sizing: border-box;
     background: transparent;
@@ -120,7 +135,9 @@
     height: 2px;
     width: 50%;
     background-color: white;
-    transition: background-color 0.3s ease, transform 0.3s;
+    transition:
+      background-color 0.3s ease,
+      transform 0.3s;
   }
 }
 
@@ -144,5 +161,7 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
-  transition: opacity 1s ease, visibility 0s 1s;
+  transition:
+    opacity 1s ease,
+    visibility 0s 1s;
 }

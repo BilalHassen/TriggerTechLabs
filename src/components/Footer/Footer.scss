@@ -1,0 +1,34 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 4rem 1.6rem;
+  width: 100vw;
+  // Make this section stretch the full width of the screen (viewport width)
+  margin-left: calc(-50vw + 50%);
+  // Shift it left by half the screen, then right by half the container
+  // This keeps the section visually centered with the rest of the content
+  border-top: 1px solid grey;
+
+  &__icons {
+    gap: 1rem;
+  }
+
+  @include desktop-medium {
+    gap: 4rem;
+  }
+
+  &__text {
+    color: white;
+    font-size: 1.3rem;
+
+    @include desktop-medium {
+      font-size: 2rem;
+    }
+
+    @include desktop-large {
+      font-size: 2.4rem;
+    }
+  }
+}

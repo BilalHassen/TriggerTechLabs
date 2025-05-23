@@ -1,0 +1,58 @@
+.nav {
+  &__burger-btn,
+  &__side-burger-btn {
+    position: relative;
+    z-index: 1001;
+    border-radius: 40px;
+    height: 4rem;
+    width: 4rem;
+    background: transparent;
+    border: 1px solid grey;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.7rem;
+    cursor: pointer;
+    padding: 0;
+    box-sizing: border-box;
+    opacity: 100%;
+    transition: border-color 0.3s ease, opacity 5s ease;
+
+    &:hover {
+      border-color: $pink;
+
+      .nav__burger-bar,
+      .nav__side-burger-bar {
+        background-color: $pink;
+      }
+    }
+  }
+
+  &__burger-bar,
+  &__side-burger-bar {
+    height: 2px;
+    width: 50%;
+    background-color: white;
+    transition: background-color 0.3s ease, transform 0.3s;
+  }
+
+  &__burger-btn-open {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 1s ease, visibility 0s 1s;
+  }
+
+  &__side-burger-bar-open-bar-1 {
+    position: relative;
+    top: 3px;
+    transform: rotate(130deg);
+  }
+
+  &__side-burger-bar-open-bar-2 {
+    position: relative;
+    bottom: 6px;
+    transform: rotate(-130deg);
+  }
+}

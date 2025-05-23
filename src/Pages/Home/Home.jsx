@@ -1,11 +1,12 @@
-import React from 'react'
-import LayOut from '../../LayOut/LayOut'
+import React from "react";
+import LayOut from "../../LayOut/LayOut";
+import MainSection from "./components/MainSection/MainSection";
 export default function Home() {
   return (
     <>
-    <LayOut>
-        <h1>Home page content will go here...</h1>
-    </LayOut>
+      <LayOut>
+        <MainSection />
+      </LayOut>
     </>
-  )
+  );
 }

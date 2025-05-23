@@ -1,0 +1,123 @@
+.my-skills {
+  @include tablet-medium {
+    width: 35%;
+  }
+
+  @include tablet-large {
+    width: 30%;
+  }
+
+  @include desktop-small {
+    width: 30%;
+  }
+
+  @include desktop-medium {
+    width: 30%;
+  }
+
+  // card instance
+  &__card {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    padding: 4rem 2rem 4rem 2rem;
+
+    @include mobile-large {
+      padding: 5rem 3rem 5rem 3rem;
+      gap: 4rem;
+    }
+
+    @include desktop-large {
+      height: 100%;
+    }
+  }
+
+  &__heading {
+    border-bottom: 1px solid grey;
+    font-size: 2rem;
+    padding-bottom: 2rem;
+    color: white;
+
+    @include desktop-large {
+      font-size: 3rem;
+    }
+  }
+
+  // STYLING FOR EACH SKILLS CONTAINERS
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__progress-bar {
+    width: var(--progress-width);
+    height: 0.3rem;
+    border-radius: 4px;
+    background: linear-gradient(to right, #02db4a, #33fe00);
+    transform: translateX(-200px);
+    animation: slideIn 3s forwards ease;
+
+    @include desktop-large {
+      height: 0.4rem;
+    }
+
+    @keyframes slideIn {
+      to {
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__progress-track {
+    background-color: #494949; // light gray base bar
+    height: 0.3rem;
+    width: 100%;
+    border-radius: 4px;
+    overflow: hidden; // keeps the fill inside
+    position: relative;
+
+    @include desktop-large {
+      height: 0.4rem;
+    }
+  }
+  &__percentage {
+    color: #494949;
+    font-size: 1.4rem;
+
+    @include desktop-large {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__title {
+    font-size: 1.4rem;
+    color: white;
+
+    @include desktop-large {
+      font-size: 1.6rem;
+    }
+  }
+}
+// classes for each skills color
+.pink {
+  background: linear-gradient(to right, #fe01cc, #00c3fe);
+}
+
+.blue {
+  background: linear-gradient(to right, #00c3fe, #fe01cc);
+}
+.red {
+  background: linear-gradient(to right, #fef100, #fe0101);
+}
+
+.yellow {
+  background: linear-gradient(to right, #fef100);
+}

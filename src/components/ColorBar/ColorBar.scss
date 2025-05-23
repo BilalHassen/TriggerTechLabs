@@ -1,0 +1,14 @@
+.colour-bar {
+  background: linear-gradient(to right, #fe01cc, #00c3fe);
+  height: 4px;
+  border-radius: 8px;
+  width: 70%;
+
+  @include tablet-medium {
+    width: 60%;
+  }
+
+  @include desktop-large {
+    margin-bottom: 6rem;
+  }
+}

@@ -1,0 +1,65 @@
+.tech-stack {
+  &__card {
+    background: #151515;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.6rem;
+    height: 12rem;
+    width: 100%;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.05);
+      background: #1f1f1f;
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+      cursor: pointer;
+    }
+
+    @include tablet-small {
+      height: 150px;
+    }
+
+    @include desktop-large {
+      gap: 3rem;
+      height: 180px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $pink;
+      outline-offset: 4px;
+    }
+  }
+
+  &__icon {
+    width: 60px;
+    height: 60px;
+
+    @include tablet-medium {
+      width: 70px;
+      height: 70px;
+    }
+
+    @include desktop-large {
+      width: 80px;
+      height: 80px;
+    }
+  }
+
+  &__name {
+    color: white;
+    font-size: clamp(1.4rem, 1vw + 1rem, 2rem);
+    font-family: "Inter", sans-serif;
+    letter-spacing: 0.1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-stack__card {
+    transition: none !important;
+    transform: none !important;
+  }
+}
