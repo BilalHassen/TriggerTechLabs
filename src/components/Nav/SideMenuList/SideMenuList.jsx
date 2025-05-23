@@ -8,7 +8,7 @@ function SideMenuList() {
     <ul className="nav__side-menu-list">
       {links.map((text) => (
         <li key={text} className="nav__side-menu-item">
-          <button className="nav__side-menu-text">{text}</button>
+          <p className="nav__side-menu-text">{text}</p>
         </li>
       ))}
     </ul>

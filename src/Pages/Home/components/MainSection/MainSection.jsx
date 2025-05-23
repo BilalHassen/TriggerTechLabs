@@ -10,7 +10,7 @@ import TechStack from "../TechStack/TechStack";
 import DevProcess from "../DevProcess/DevProcess";
 import ContactMe from "../ContactMe/ContactMe";
 import Footer from "../../../../components/Footer/Footer";
-import { JOB_TITLES, BIOGRAPHY } from "./MainSection";
+import { JOB_TITLES, BIOGRAPHY } from "./MainData";
 
 
 

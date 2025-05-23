@@ -2,11 +2,10 @@ import "./Nav.scss";
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
 import { useWidth } from "@hooks/useWidth";
 import NavLargeMenu from "./NavLargeMenu/NavLargeMenu";
-import logo from "../../../public/assets/logo.png";
+import logo from "/assets/logo.png";
 
 const Nav = () => {
   const width = useWidth();
-  console.log(width);
 
   return (
     <>
