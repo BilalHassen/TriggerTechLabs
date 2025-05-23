@@ -15,7 +15,7 @@ function DevProcess() {
         {processData.map((step) => {
           const Icon = step.icon;
           return (
-            <Card className={"dev-process__card"}>
+            <Card key={step.id} className={"dev-process__card"}>
               <h3
                 className="dev-process__card-title"
                 style={{ color: `${step.color}` }}

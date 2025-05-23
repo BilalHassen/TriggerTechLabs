@@ -9,7 +9,7 @@ function ContactMe() {
         <br />
         <span className="contact-me__subtitle">Not a Pretty Widget.</span>
       </h2>
-      <button className="contact-me__button">Contact Me</button>
+      <button className="contact-me__button" type="button">Contact Me</button>
     </section>
   );
 }

@@ -2,6 +2,7 @@ import { Search, Brain, Pencil, Code2, Bug, Rocket } from "lucide-react";
 
 const steps = [
   {
+    id: "discovery",
     title: "1. Discovery",
     subTitle: "Understand your goals",
     description:
@@ -10,6 +11,7 @@ const steps = [
     color: "#00ff99", // green
   },
   {
+    id: "strategy",
     title: "2. Strategy",
     subTitle: "Plan the foundation",
     description:
@@ -18,6 +20,7 @@ const steps = [
     color: "#ff0077", // pink
   },
   {
+    id: "design",
     title: "3. Design",
     subTitle: "Craft the user experience",
     description:
@@ -26,6 +29,7 @@ const steps = [
     color: "#ffaa00", // orange
   },
   {
+    id: "build",
     title: "4. Build",
     subTitle: "Develop the site",
     description:
@@ -34,6 +38,7 @@ const steps = [
     color: "#00aaff", // blue
   },
   {
+    id: "review",
     title: "5. Review & Test",
     subTitle: "Polish and perfect",
     description:
@@ -42,6 +47,7 @@ const steps = [
     color: "#ff4444", // red
   },
   {
+    id: "launch",
     title: "6. Launch & Support",
     subTitle: "Go live with confidence",
     description:
