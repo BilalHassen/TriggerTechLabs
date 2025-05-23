@@ -9,10 +9,9 @@ function TechStack() {
     <>
       <div className="tech-stack__divider">
         <h2 className="tech-stack__title">Tech Stack</h2>
-        {/* <div className='tech-stack__colour-bar'></div> */}
         <ColorBar />
       </div>
-      <section className="tech-stack-section">
+      <section className="tech-stack-section" aria-labelledby="tech-stack-title">
         <div className="tech-stack">
           {techData.map((techItem) => (
             <TechStackCard

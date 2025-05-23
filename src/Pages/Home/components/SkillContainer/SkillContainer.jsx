@@ -1,5 +1,4 @@
 import React from "react";
-import "./SkillContainer.scss";
 export default function SkillContainer({
   title,
   percentage,

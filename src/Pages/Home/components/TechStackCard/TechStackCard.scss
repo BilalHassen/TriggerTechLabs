@@ -10,11 +10,11 @@
     padding: 1.6rem;
     height: 12rem;
     width: 100%;
-    transition: all 0.3s ease;
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
 
     &:hover {
       transform: scale(1.05);
-      background: #1f1f1f; // slight brightness
+      background: #1f1f1f;
       box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
       cursor: pointer;
     }
@@ -25,7 +25,12 @@
 
     @include desktop-large {
       gap: 3rem;
-      height: 180px; // slightly larger for big screens
+      height: 180px;
+    }
+
+    &:focus-visible {
+      outline: 2px solid $pink;
+      outline-offset: 4px;
     }
   }
 
@@ -46,12 +51,15 @@
 
   &__name {
     color: white;
-    font-size: 1.6rem;
+    font-size: clamp(1.4rem, 1vw + 1rem, 2rem);
     font-family: "Inter", sans-serif;
     letter-spacing: 0.1rem;
+  }
+}
 
-    @include desktop-large {
-      font-size: 2rem;
-    }
+@media (prefers-reduced-motion: reduce) {
+  .tech-stack__card {
+    transition: none !important;
+    transform: none !important;
   }
 }
