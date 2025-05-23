@@ -3,13 +3,11 @@ import Card from "../../../../components/Card/Card";
 import "./DevProcess.scss";
 import ColorBar from "../../../../components/ColorBar/ColorBar";
 import processData from "./processData";
+import SectionHeading from "../../../../components/SectionHeading/SectionHeading";
 function DevProcess() {
   return (
     <>
-      <div className="dev-process__wrapper">
-        <h1 className="dev-process__title">The Process</h1>
-        <ColorBar />
-      </div>
+     <SectionHeading TitleText={"The Process"}/>
 
       <section className="dev-process">
         {processData.map((step) => {
