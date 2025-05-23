@@ -1,16 +1,23 @@
 import React from "react";
 import "./SideMenuList.scss";
+import { Link } from "react-router-dom";
+import links from "./sideMenuData";
 
-const links = ["Projects", "Services", "Contact", "Case Study"];
+
 
 function SideMenuList() {
   return (
     <ul className="nav__side-menu-list">
-      {links.map((text) => (
+      {links.map((text) => {
+        console.log(text)
+        return(
+          <Link to={text.path}>
         <li key={text} className="nav__side-menu-item">
-          <p className="nav__side-menu-text">{text}</p>
+          <p className="nav__side-menu-text">{text.title}</p>
         </li>
-      ))}
+        </Link>
+        )
+})}
     </ul>
   );
 }

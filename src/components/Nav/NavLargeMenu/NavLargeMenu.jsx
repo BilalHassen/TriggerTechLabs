@@ -7,7 +7,7 @@ function NavLargeMenu() {
   return (
     <div className="nav__links">
       <ul className="nav__links-container">
-        <Link to="">
+        <Link to="/projects">
           <li className="nav__links-item">Projects</li>
         </Link>
         <Link to="">
