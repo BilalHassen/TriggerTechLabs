@@ -1,10 +1,25 @@
 import React from "react";
 import SectionHeading from "../../../../components/SectionHeading/SectionHeading";
-import "./ProjectsContainer.scss"
+import "./ProjectsContainer.scss";
+import projectData from "../../ProjectsData";
+import ProjectCard from "../ProjectCard/ProjectCard";
+
 function ProjectsContainer() {
+  console.log("Project Data", projectData);
+
   return (
     <section className="projects">
       <SectionHeading TitleText={"Projects"} />
+      {projectData.map((projectData) => {
+        return (
+        <ProjectCard 
+        key={projectData.id}
+        title={projectData.title}
+        description={projectData.description}
+        thumbnails={projectData.thumbnails}
+        />
+        );
+      })}
     </section>
   );
 }

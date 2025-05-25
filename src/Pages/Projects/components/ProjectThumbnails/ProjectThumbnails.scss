@@ -1,0 +1,14 @@
+.projects__img {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 8px;
+  position: relative;
+  transition: transform 3s ease;
+  cursor: pointer;
+
+  &:hover{
+    transform: translateY(calc(-100% + 300px)); // Scroll up while respecting the container height
+  }
+}
