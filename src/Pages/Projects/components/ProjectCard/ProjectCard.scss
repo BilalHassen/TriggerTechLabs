@@ -3,7 +3,8 @@
     &__card{
         display: flex;
         flex-direction: column;
-        gap: 4rem;
+        gap: 2rem;
+        border: 1px solid red;
     }
 
     &__card-title{

@@ -9,7 +9,7 @@ function SideMenuList() {
   return (
     <ul className="nav__side-menu-list">
       {links.map((text) => {
-        console.log(text)
+        
         return(
           <Link to={text.path}>
         <li key={text} className="nav__side-menu-item">

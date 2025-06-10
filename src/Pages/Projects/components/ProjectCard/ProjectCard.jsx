@@ -2,7 +2,7 @@ import React from "react";
 import "./ProjectCard.scss";
 import ProjectThumbnails from "../ProjectThumbnails/ProjectThumbnails";
 function ProjectCard({title, description, thumbnails}) {
-console.log(thumbnails)
+
 
 
   return (

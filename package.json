@@ -20,7 +20,8 @@
     "simple-icons": "^14.14.0",
     "swiper": "^11.2.6",
     "typed.js": "^2.1.0",
-    "uuid": "^11.1.0"
+    "uuid": "^11.1.0",
+    "yet-another-react-lightbox": "^3.23.2"
   },
   "devDependencies": {
     "@types/react": "^19.0.10",
