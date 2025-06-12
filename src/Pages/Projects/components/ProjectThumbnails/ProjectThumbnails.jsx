@@ -19,19 +19,10 @@ function ProjectThumbnails({ thumbnails }) {
   
   return (
     <div className="projects__card-swpContainer">
-      <Swiper
-        slidesPerView={1}
-        loop={true}
-        pagination={{ clickable: true }}
-        modules={[Pagination]}
-        autoHeight={false}
-        onSlideChange={(swiper) => {
-          setIndex(swiper.realIndex);
-        }}
-      >
+    
     
         
-          <SwiperSlide >
+  
             <img
               src={thumbnails[0].src}
               alt={thumbnails[0].alt || `Project image ${i + 1}`}
@@ -42,8 +33,8 @@ function ProjectThumbnails({ thumbnails }) {
                 
               }}
             />
-          </SwiperSlide>
-      </Swiper>
+        
+      
 
       <Lightbox
         open={open}
