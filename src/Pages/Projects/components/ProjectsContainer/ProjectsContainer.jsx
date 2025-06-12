@@ -17,6 +17,7 @@ function ProjectsContainer() {
         title={projectData.title}
         description={projectData.description}
         thumbnails={projectData.thumbnails}
+        textColor={projectData.textColor}
         />
         );
       })}
