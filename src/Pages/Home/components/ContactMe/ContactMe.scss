@@ -9,7 +9,8 @@
 
   @include tablet-small {
     min-width: 350px;
-    margin: 0 auto;
+
+  margin-bottom: 5rem;
   }
 
   @include desktop-small {
@@ -72,7 +73,7 @@
     border-radius: 40px;
 
     @include tablet-small {
-      width: 40%;
+      max-width: 20rem;
       height: 4.5rem;
       font-size: 1.6rem;
     }

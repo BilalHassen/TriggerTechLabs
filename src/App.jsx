@@ -1,6 +1,6 @@
 import "./App.scss";
 import Home from "./Pages/Home/Home";
-
+import Projects from "./Pages/Projects/Projects";
 import {
   BrowserRouter as Router,
   Routes,
@@ -14,7 +14,7 @@ function App() {
       <Router>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/projects" element={""} />
+          <Route path="/projects" element={<Projects/>} />
           <Route path="/contact" element={""} />
           <Route path="/case-study" element={""} />
         </Routes>

@@ -1,4 +1,4 @@
-
+import {Link} from "react-router-dom";
 import "./SideMenu.scss";
 import SideMenuList from "../SideMenuList/SideMenuList";
 import SideMenuFooter from "../SideMenuFooter/SideMenuFooter";
@@ -14,9 +14,11 @@ function SideMenu({ isOpen, handleSideMenu }) {
           className={`nav__animation-container ${isOpen ? "nav__animation-container-open" : ""}`}
         >
           <div className="nav__side-menu-container">
+            <Link to="/">
             <h1 className="nav__side-menu-logo">
               Trigger<span className="nav__side-menu-logo-pink">Tech</span>
             </h1>
+            </Link>
             <BurgerBtn
               isOpen={isOpen}
               onClick={handleSideMenu}

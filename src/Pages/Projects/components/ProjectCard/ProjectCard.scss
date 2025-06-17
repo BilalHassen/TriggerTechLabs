@@ -1,0 +1,62 @@
+.projects{
+
+    &__card{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+        border: 1.5px solid $card-border;
+        border-radius: 8px;
+        padding: 1.6rem;
+        transition: 0.3s ease;
+
+        @include tablet-large{
+            padding: 2.4rem;
+            gap: 3.5rem;
+         }
+
+        &:hover{
+          border: 1px solid var(--textColor);
+          transform: scale(1.05);
+        }
+    }
+
+    &__card-wrapper{
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        @include tablet-small{
+            gap: 1.3rem;
+         }
+    }
+
+    &__card-title{
+        font-size: 1.6rem;
+
+        @include tablet-small{
+            font-size: 1.8rem;
+        }
+
+        @include desktop-large{
+            font-size: 2.2rem;
+        }
+    }
+
+    &__card-description{
+        color: white;
+        line-height: 1.3rem;
+        font-size: 1rem;
+
+        @include tablet-small{
+            font-size: 1.3rem;
+            line-height: 1.6rem;
+            width: 100%;
+        }
+
+        @include desktop-large{
+            font-size: 1.6rem;
+            line-height: 2rem;
+            width: 100%;
+        }
+    }
+}

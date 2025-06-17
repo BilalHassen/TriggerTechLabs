@@ -81,7 +81,7 @@ function MainSection() {
       <TechStack />
       <DevProcess />
       <ContactMe />
-      <Footer />
+      
     </>
   );
 }
