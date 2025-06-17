@@ -5,6 +5,10 @@
     flex-direction: column;
     gap: 2rem;
 
+    @include tablet-small{
+        gap: 5rem;
+    }
+
     @include desktop-large{
         margin-bottom: 12rem;
     }

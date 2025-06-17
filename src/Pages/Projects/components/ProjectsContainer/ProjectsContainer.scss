@@ -7,14 +7,16 @@
         max-width: 750px;
         display:grid;
         grid-template-columns: repeat((2,1fr));
-        gap: 4rem;
+        gap: 3rem;
     }
     @include tablet-large{
         max-width: 950px;
+        gap: 4rem;
     }
 
     @include desktop-large{
         display:grid;
+        gap: 6rem;
         grid-template-columns: repeat((2,1fr));
         max-width: 1200px;
     }
