@@ -13,7 +13,7 @@ function NavLargeMenu() {
         <Link to="">
           <li className="nav__links-item">Services</li>
         </Link>
-        <Link to="">
+        <Link to="/contact">
           <li className="nav__links-item">Contact</li>
         </Link>
         <Link to="">
