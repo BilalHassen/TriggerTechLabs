@@ -1,9 +1,6 @@
 // components/ProjectThumbnails/ProjectThumbnails.jsx
 import React, { useState } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/pagination";
+
 import "./ProjectThumbnails.scss";
 
 import Lightbox from "yet-another-react-lightbox";
@@ -16,25 +13,16 @@ function ProjectThumbnails({ thumbnails }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
-  
   return (
     <div className="projects__card-swpContainer">
-    
-    
-        
-  
-            <img
-              src={thumbnails[0].src}
-              alt={thumbnails[0].alt || `Project image ${i + 1}`}
-              className="projects__card-img"
-              
-              onClick={() => {
-                setOpen(true);
-                
-              }}
-            />
-        
-      
+      <img
+        src={thumbnails[0].src}
+        alt={thumbnails[0].alt || `Project image ${i + 1}`}
+        className="projects__card-img"
+        onClick={() => {
+          setOpen(true);
+        }}
+      />
 
       <Lightbox
         open={open}

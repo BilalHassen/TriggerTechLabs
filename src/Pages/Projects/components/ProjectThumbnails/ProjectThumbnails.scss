@@ -11,6 +11,19 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
+    @include tablet-small{
+      height: 250px;
+    }
+
+    @include tablet-large{
+     height: 400px;
+  }
+
+
+  @include desktop-large{
+    height: 450px;
+}
   }
 
   &-img{

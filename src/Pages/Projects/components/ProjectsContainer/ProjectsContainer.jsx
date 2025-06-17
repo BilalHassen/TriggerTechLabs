@@ -8,8 +8,8 @@ function ProjectsContainer() {
   console.log("Project Data", projectData);
 
   return (
-    <section className="projects">
-      <SectionHeading TitleText={"Projects"} />
+    <section className="projects__wrapper">
+    
       {projectData.map((projectData) => {
         return (
         <ProjectCard 
