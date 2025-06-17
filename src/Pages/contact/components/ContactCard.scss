@@ -1,9 +1,7 @@
 .contact{
-     display: flex;
-     flex-direction: column;
-     gap: 1.6rem;
-     margin-top: 2rem;
-     margin-bottom: 8rem;
+    
+
+
     &__card{
         border-radius: 8px;
         background-color: $card-background;
@@ -12,6 +10,10 @@
         align-items: center;
         gap: 1.6rem;
         padding: 1.6rem;
+
+        @include desktop-large{
+            padding: 3rem;
+        }
     }
 
     // &__card-icon{
@@ -22,10 +24,20 @@
     &__card-title{
         color: white;
         font-size: 2rem;
+
+
+        @include desktop-large{
+            font-size: 2.4rem;
+        }
     }
 
     &__card-details{
         color: white;
         font-size: 1.3rem;
+        color: $text-grey;
+
+        @include desktop-large{
+            font-size: 1.6rem;
+        }
     }
 }

@@ -1,3 +1,17 @@
 .contact{
-    color: $pink;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+
+    @include tablet-small{
+        gap: 6rem;
+    }
+
+    @include desktop-small{
+        gap: 6rem;
+    }
+
+    @include desktop-large{
+        gap: 2rem;
+    }
 }

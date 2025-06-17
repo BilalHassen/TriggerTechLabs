@@ -1,0 +1,21 @@
+.contact{
+    &__container{
+        display: flex;
+        flex-direction: column;
+   
+        gap: 1.6rem;
+        margin-top: 2rem;
+        margin-bottom: 8rem;
+   
+   
+        @include tablet-small{
+           display: grid;
+           grid-template-columns: repeat(2,1fr);
+           gap: 3rem;
+           width: 100%;
+           max-width: 800px;
+           margin: 0rem auto 8rem;
+   
+        }
+    }
+}

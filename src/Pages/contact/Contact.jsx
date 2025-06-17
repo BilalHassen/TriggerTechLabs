@@ -4,24 +4,14 @@ import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import LayOut from "../../LayOut/LayOut";
 import contactData from "./contactData";
 import ContactCard from "./components/ContactCard";
+import ContactsContainer from "./components/ContactsContainer/ContactsContainer";
 function Contact() {
   return (
     <LayOut>
-        <SectionHeading TitleText={"Contact Me"} />
-      <section className="contact">
         
-        {contactData.map((card) => {
-          console.log(card);
-          return (
-            <ContactCard
-              key={card.id}
-              icon={card.icon}
-              title={card.title}
-              color={card.color}
-              details={card.details}
-            />
-          );
-        })}
+      <section className="contact">
+      <SectionHeading TitleText={"Contact Me"} />
+       <ContactsContainer/>
       </section>
     </LayOut>
   );
