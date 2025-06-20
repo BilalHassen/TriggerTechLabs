@@ -1,0 +1,159 @@
+.contact{
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        background-color: $card-background;
+        border-radius: 8px;
+        padding: 4rem 1.6rem 4rem 1.6rem;
+
+        @include tablet-small{
+            padding: 4rem;
+            margin: 0 auto;
+        }
+        
+        
+    }
+
+    &__form-title{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+        color: $white;
+
+        @include tablet-small{
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__form-field{
+        width: 100%;
+    }
+
+    &__form-group{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        
+        
+        @include tablet-small{
+            flex-direction: row;
+            gap: 6rem;
+        }
+    }
+
+    ::placeholder{
+        color: $text-grey;
+        font-size: 1.6rem;
+
+        @include tablet-small{
+            font-size: 1.8rem;
+        }
+    }
+
+    input{
+        border-bottom: 1px solid $icon-border;
+        padding: 1rem 0rem 2rem 0rem;
+        width: 100%;
+        color: $white;
+       box-sizing: border-box;
+       background-color: transparent;
+    }
+
+    input:focus{
+        border-bottom: 1px solid $pink;
+        font-size: 1.3rem;
+
+        @include tablet-small{
+            font-size: 1.6rem;
+        }
+    }
+
+    textarea{
+        padding: 1.2rem 0;
+        width: 100%;
+        min-height: 120px; // gives room to type
+        resize: vertical;  // allows user to resize if needed
+        color: $white;
+        font-size: 1.6rem;
+        border: none;
+        border-bottom: 1px solid $icon-border;
+        box-sizing: border-box;
+        background-color: transparent;
+    }
+
+    textarea:focus{
+        border-bottom: 1px solid $pink;
+        font-size: 1.3rem;
+
+        @include tablet-small{
+            font-size: 1.6rem;
+        }
+    }
+
+    &__form-button{
+        width: 60%;
+        padding: 1.5rem 1.5rem;
+        background-color: $pink;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border-radius: 30px;
+        cursor: pointer;
+
+        @include tablet-small{
+            max-width: 280px;
+           margin: 0 auto;
+        }
+    }
+
+    &__form-error{
+        color: $pink;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+    
+}
+
+// this is to remove the autofill color from the input fields
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px $card-background inset !important; // or your form background
+    -webkit-text-fill-color: $white !important;
+  }
+  input,
+textarea {
+  font-size: 1.6rem;
+  font-family: inherit;
+  color: $white;
+  background-color: transparent;
+}
+
+
+.Toastify__toast {
+    border-radius: 10px !important;
+    padding: 16px !important;
+    color: white !important;
+    background-color: #111;
+    
+  }
+  
+  .Toastify__toast--success {
+    background-color: $card-background !important;
+  }
+  
+  .Toastify__toast-body {
+    font-size: 1.6rem !important;
+  }
+  .Toastify__progress-bar--success{
+    background: $card-background !important;
+  }
+  
+  .Toastify__progress-bar {
+    background: #f50057 !important;
+  }
+  

@@ -3,6 +3,7 @@
    License: none (public domain)
    ----code below this line---
 */
+@use "./variables" as *;
 
 html,
 body,
@@ -155,6 +156,21 @@ textarea {
   resize: none;
 }
 
+input,
+textarea,
+button {
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  box-shadow: none;
+  outline: none;
+  box-sizing: border-box;
+  font: inherit;       // inherit font from body
+  color: inherit;      // use current text color
+}
+
+
 /* 
      ----code above this line---
     http://meyerweb.com/eric/tools/css/reset/ 
@@ -162,3 +178,4 @@ textarea {
      License: none (public domain)
     
   */
+  
