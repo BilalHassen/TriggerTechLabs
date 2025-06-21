@@ -1,0 +1,226 @@
+.contact{
+    /* Main form container styling */
+    &__form{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        background-color: $card-background;
+        border-radius: 8px;
+        padding: 4rem 1.6rem 4rem 1.6rem;
+
+        @include tablet-small{
+            padding: 4rem;
+            margin: 0 auto;
+        }
+    }
+
+    /* Form title styling */
+    &__form-title{
+        font-size: 2rem;
+        text-align: center;
+        font-weight: 600;
+        color: $white;
+
+        @include tablet-small{
+            font-size: 2.4rem;
+            margin-bottom: 2rem;
+        }
+    }
+
+    /* Individual form field container */
+    &__form-field{
+        width: 100%;
+    }
+
+    /* Group for name and email fields */
+    &__form-group{
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        
+        @include tablet-small{
+            flex-direction: row;
+            gap: 6rem;
+        }
+    }
+
+    /* Placeholder text styling */
+    ::placeholder{
+        color: $text-grey;
+        font-size: 1.6rem;
+
+        @include tablet-small{
+            font-size: 1.8rem;
+        }
+    }
+
+    /* Input field styling with disabled state */
+    input{
+        border-bottom: 1px solid $icon-border;
+        padding: 1rem 0rem 2rem 0rem;
+        width: 100%;
+        color: $white;
+        box-sizing: border-box;
+        background-color: transparent;
+        transition: border-bottom 0.3s ease; /* Smooth transition for focus states */
+
+        /* Disabled state styling */
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    }
+
+    /* Input focus state */
+    input:focus{
+        border-bottom: 1px solid $pink;
+        font-size: 1.3rem;
+
+        @include tablet-small{
+            font-size: 1.6rem;
+        }
+    }
+
+    /* Textarea styling with disabled state */
+    textarea{
+        padding: 1.2rem 0;
+        width: 100%;
+        min-height: 120px; /* Minimum height for comfortable typing */
+        resize: vertical; /* Allow vertical resizing only */
+        color: $white;
+        font-size: 1.6rem;
+        border: none;
+        border-bottom: 1px solid $icon-border;
+        box-sizing: border-box;
+        background-color: transparent;
+        transition: border-bottom 0.3s ease; /* Smooth transition for focus states */
+
+        /* Disabled state styling */
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+        }
+    }
+
+    /* Textarea focus state */
+    textarea:focus{
+        border-bottom: 1px solid $pink;
+        font-size: 1.3rem;
+
+        @include tablet-small{
+            font-size: 1.6rem;
+        }
+    }
+
+    /* Submit button styling with hover and disabled states */
+    &__form-button{
+        width: 60%;
+        padding: 1.5rem 1.5rem;
+        background-color: $pink;
+        color: $white;
+        font-size: 1.6rem;
+        font-weight: 600;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: 0.5s ease-in-out;
+        border: none; /* Remove default button border */
+
+        /* Hover effect with transform animation */
+        &:hover:not(:disabled){
+            background-color: rgb(1, 147, 251);
+            transform: translateY(-2px); /* Subtle lift effect */
+        }
+
+        /* Disabled state styling */
+        &:disabled {
+            opacity: 0.6;
+            cursor: not-allowed;
+            transform: none; /* Prevent transform when disabled */
+        }
+
+        @include tablet-small{
+            max-width: 280px;
+            margin: 0 auto;
+        }
+    }
+
+    /* Error message styling */
+    &__form-error{
+        color: $pink;
+        font-size: 1.2rem;
+        font-weight: 600;
+        text-align: left;
+        margin-top: 0.5rem;
+    }
+}
+
+/* Screen reader only class for accessibility labels */
+/* Hides content visually but keeps it available to screen readers */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Remove autofill background color from input fields */
+/* Ensures consistent styling across browsers */
+input:-webkit-autofill {
+    background-color: transparent !important;
+    -webkit-box-shadow: 0 0 0 1000px $card-background inset !important;
+    -webkit-text-fill-color: $white !important;
+}
+
+/* Global input and textarea styling */
+input,
+textarea {
+    font-size: 1.6rem;
+    font-family: inherit;
+    color: $white;
+    background-color: transparent;
+}
+
+/* Toast notification styling */
+.Toastify__toast {
+    border-radius: 10px !important;
+    padding: 16px !important;
+    color: white !important;
+    background-color: #111;
+}
+
+/* Success toast styling */
+.Toastify__toast--success {
+    background-color: $card-background !important;
+}
+
+/* Error toast styling */
+.Toastify__toast--error {
+    background-color: #d32f2f !important;
+}
+
+/* Toast body text styling */
+.Toastify__toast-body {
+    font-size: 1.6rem !important;
+}
+
+/* Success progress bar styling */
+.Toastify__progress-bar--success{
+    background: $card-background !important;
+}
+
+/* Error progress bar styling */
+.Toastify__progress-bar--error{
+    background: #d32f2f !important;
+}
+
+/* Default progress bar styling */
+.Toastify__progress-bar {
+    background: #f50057 !important;
+}
+  

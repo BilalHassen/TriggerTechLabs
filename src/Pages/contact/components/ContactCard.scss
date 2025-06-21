@@ -1,0 +1,48 @@
+.contact{
+    
+
+
+    &__card{
+        border-radius: 8px;
+        background-color: $card-background;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1.6rem;
+        padding: 1.6rem;
+
+
+        @include tablet-medium{
+            
+        }
+        
+        @include desktop-large{
+            padding: 3rem;
+        }
+    }
+
+    // &__card-icon{
+    //     height: 50px;
+    //     width: 40px;
+    // }
+
+    &__card-title{
+        color: white;
+        font-size: 2rem;
+
+
+        @include desktop-large{
+            font-size: 2.4rem;
+        }
+    }
+
+    &__card-details{
+        color: white;
+        font-size: 1.3rem;
+        color: $text-grey;
+
+        @include desktop-large{
+            font-size: 1.6rem;
+        }
+    }
+}
