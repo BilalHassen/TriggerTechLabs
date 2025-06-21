@@ -11,6 +11,11 @@
         gap: 1.6rem;
         padding: 1.6rem;
 
+
+        @include tablet-medium{
+            
+        }
+        
         @include desktop-large{
             padding: 3rem;
         }

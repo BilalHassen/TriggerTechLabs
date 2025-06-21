@@ -102,6 +102,11 @@
         font-weight: 600;
         border-radius: 30px;
         cursor: pointer;
+        transition: 0.5s ease-in-out;
+
+        &:hover{
+            background-color: rgb(1, 147, 251);
+        }
 
         @include tablet-small{
             max-width: 280px;
