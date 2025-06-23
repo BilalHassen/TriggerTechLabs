@@ -1,7 +1,8 @@
-import { CheckCircle } from "lucide-react";
+import { CheckCircle, PlaySquare } from "lucide-react";
 
 const plansData = [
   {
+    id:1, 
     title: "Basic",
     price: "$499+",
     color: "#f70354",
@@ -15,6 +16,7 @@ const plansData = [
     fit: "Best for: simple online presence"
   },
   {
+    id:2, 
     title: "Plus",
     price: "$699 – $999+",
     color: "#b203f7",
@@ -29,6 +31,7 @@ const plansData = [
     fit: "Best for: service-based businesses"
   },
   {
+    id:3,
     title: "Pro",
     price: "$1,000 – $1,499+",
     color: "#03baf0",
@@ -46,3 +49,5 @@ const plansData = [
     fit: "Best for: growing brands or startups"
   }
 ];
+
+export default plansData;

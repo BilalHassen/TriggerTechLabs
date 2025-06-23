@@ -2,6 +2,7 @@ import React from "react";
 import LayOut from "../../LayOut/LayOut";
 import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import "./Plans.scss"
+import PlansContainer from "./components/PlansContainer/PlansContainer";
 function Plans() {
   return (
     <LayOut>
@@ -18,6 +19,7 @@ function Plans() {
         </div>
         <button className="plans__quote-btn">Get a Free quote</button>
       </section>
+      <PlansContainer/>
     </LayOut>
   );
 }
