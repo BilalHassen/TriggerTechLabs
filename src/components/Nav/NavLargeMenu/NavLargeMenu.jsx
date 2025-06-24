@@ -10,8 +10,8 @@ function NavLargeMenu() {
         <Link to="/projects">
           <li className="nav__links-item">Projects</li>
         </Link>
-        <Link to="">
-          <li className="nav__links-item">Services</li>
+        <Link to="/plans">
+          <li className="nav__links-item">Plans</li>
         </Link>
         <Link to="/contact">
           <li className="nav__links-item">Contact</li>

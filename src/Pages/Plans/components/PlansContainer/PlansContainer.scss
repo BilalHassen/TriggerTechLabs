@@ -1,0 +1,33 @@
+/**
+ * Plans Container Styles
+ * 
+ * Container styling for the pricing plans grid layout.
+ * Handles responsive design for different screen sizes.
+ */
+
+.plans {
+  // Plans Cards Wrapper
+  &__card-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    width: 100%;
+
+    @include tablet-small {
+      flex-direction: row;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    // Tablet Medium Breakpoint - Increase spacing
+    @include tablet-medium {
+      gap: 3rem;
+    }
+
+    // Tablet Large Breakpoint - Maximum spacing
+    @include tablet-large {
+      gap: 4rem;
+    }
+  }
+}

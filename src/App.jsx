@@ -7,6 +7,7 @@ import Contact from "./Pages/Contact/contact";
 import { FormspreeProvider } from "@formspree/react";
 import { ToastContainer } from "react-toastify";
 import { Slide } from "react-toastify";
+import Plans from "./Pages/Plans/Plans";
 
 /**
  * Main App Component
@@ -23,6 +24,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/plans" element={<Plans/>}/>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           
