@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import ErrorBoundary from "./components/ErrorBoundary/ErrorBoundary";
 import Home from "./Pages/Home/Home";
 import Projects from "./Pages/Projects/Projects";
-import Contact from "./Pages/Contact/contact";
+import Contact from "./Pages/Contact/Contact";
 import { FormspreeProvider } from "@formspree/react";
 import { ToastContainer } from "react-toastify";
 import { Slide } from "react-toastify";
