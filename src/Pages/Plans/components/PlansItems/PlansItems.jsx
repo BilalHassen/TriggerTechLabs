@@ -1,9 +1,13 @@
 import React from 'react'
-
-function PlansItems({label, Icon, color}) {
+import "./PlansItems.scss"
+function PlansItems({index, label, Icon, color, length}) {
+  // Determine if this is the last item for special styling
+  const isLastItem = index === length;
+  
   return (
-    <div>{label}
+    <div className={`plans__card-item ${isLastItem ? "last" : ""}`}>
     <Icon size={20} color={color}/>
+    <p className='plans__card-item-label'>{label}</p>
     </div>
   )
 }
