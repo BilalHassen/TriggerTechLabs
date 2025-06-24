@@ -1,6 +1,5 @@
 .projects{
     margin-top: 1rem;
-    margin-bottom: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
@@ -9,8 +8,6 @@
         gap: 5rem;
     }
 
-    @include desktop-large{
-        margin-bottom: 12rem;
-    }
+    
     
 }
