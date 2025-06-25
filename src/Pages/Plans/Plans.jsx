@@ -4,6 +4,7 @@ import SectionHeading from "../../components/SectionHeading/SectionHeading";
 import "./Plans.scss";
 import PlansContainer from "./components/PlansContainer/PlansContainer";
 import glitch from "/assets/glitch.png";
+import { Link } from "react-router-dom";
 import { useWidth } from "../../hooks/useWidth";
 
 /**
@@ -43,7 +44,9 @@ function Plans() {
               the first click to the final scroll, everything is designed to
               drive engagement and help your business thrive online.
             </p>
-            <button className="plans__quote-btn">Get a Free quote</button>
+            <Link to="/contact">
+              <button className="plans__quote-btn">Get a Free quote</button>
+            </Link>
           </div>
           
           {/* Decorative Glitch Image - Only shown on tablet and larger screens */}

@@ -1,0 +1,4 @@
+
+/*make sure all routes go through index.html so react can handle the routing*/
+
+/*  /index.html 200

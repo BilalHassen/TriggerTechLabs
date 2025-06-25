@@ -1,11 +1,12 @@
 .projects{
-    margin-top: 1rem;
+    margin-top: 4rem;
     display: flex;
     flex-direction: column;
     gap: 2rem;
 
     @include tablet-small{
         gap: 5rem;
+        margin-top: 8rem;
     }
 
     

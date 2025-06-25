@@ -11,17 +11,17 @@ const projectData = [
       {
         name: "Home page desktop",
         src: "/assets/audiophile-images/desktop-audio-fs.png",
-        alt: "audio website checkout page",
-      },
-      {
-        name: "Home page mobile",
-        src: "/assets/audiophile-images/mobile-audio-fp.png",
-        alt: "audio website checkout page",
+        alt: "audio website desktop page",
       },
       {
         name: "Home page tablet",
         src: "/assets/audiophile-images/tablet-audio-fp.png",
-        alt: "audio website checkout page",
+        alt: "audio website tablet page",
+      },
+      {
+        name: "Home page mobile",
+        src: "/assets/audiophile-images/mobile-audio-fp.png",
+        alt: "audio website mobile page",
       },
     ],
   },
@@ -33,14 +33,14 @@ const projectData = [
     textColor: "#FC2C0C",
     thumbnails: [
       {
-        name: "Home page tablet",
-        src: "/assets/entertainment-images/tablet-home-fs.png",
-        alt: "video streamer tablet version",
-      },
-      {
         name: "Home page desktop",
         src: "/assets/entertainment-images/desktop-home-fs.png",
         alt: "video streamer desktop version",
+      },
+      {
+        name: "Home page tablet",
+        src: "/assets/entertainment-images/tablet-home-fs.png",
+        alt: "video streamer tablet version",
       },
       {
         name: "Home page mobile",
@@ -57,14 +57,14 @@ const projectData = [
     textColor: "#0095fc",
     thumbnails: [
       {
-        name: "Home page tablet",
+        name: "Home page desktop",
         src: "/assets/brainflix-images/brainflix-desktop-fs.png",
-        alt: "BrainFlix tablet page",
+        alt: "BrainFlix desktop page",
       },
       {
-        name: "Home page desktop",
+        name: "Home page tablet",
         src: "/assets/brainflix-images/brainflix-tablet-fs.png",
-        alt: "BrainFlix desktop page",
+        alt: "BrainFlix tablet page",
       },
       {
         name: "Home page mobile",
@@ -81,14 +81,14 @@ const projectData = [
     textColor: "#419ebb",
     thumbnails: [
       {
-        name: "Home page tablet",
-        src: "/assets/planets-images/planets-tablet-fs.png",
-        alt: "SolarScope tablet page",
-      },
-      {
         name: "Home page desktop",
         src: "/assets/planets-images/planets-desktop-fs.png",
         alt: "SolarScope desktop page",
+      },
+      {
+        name: "Home page tablet",
+        src: "/assets/planets-images/planets-tablet-fs.png",
+        alt: "SolarScope tablet page",
       },
       {
         name: "Home page mobile",
