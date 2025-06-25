@@ -1,6 +1,6 @@
 import React from "react";
 import "./Footer.scss";
-import IconsContainer from "../IconsContainer/IconsContainer";
+import IconsContainer from "@components/IconsContainer/IconsContainer";
 function Footer() {
   return (
     <footer className="footer">

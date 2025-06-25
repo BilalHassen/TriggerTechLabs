@@ -1,9 +1,9 @@
 import React from "react";
-import Card from "../../../../components/Card/Card";
+import Card from "@components/Card/Card";
 import "./DevProcess.scss";
-import ColorBar from "../../../../components/ColorBar/ColorBar";
+import ColorBar from "@components/ColorBar/ColorBar";
 import processData from "./processData";
-import SectionHeading from "../../../../components/SectionHeading/SectionHeading";
+import SectionHeading from "@components/SectionHeading/SectionHeading";
 function DevProcess() {
   return (
     <>

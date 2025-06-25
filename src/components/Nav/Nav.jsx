@@ -1,7 +1,7 @@
 import "./Nav.scss";
 import PropTypes from 'prop-types';
 import { BurgerMenu } from "./BurgerMenu/BurgerMenu";
-import { useWidth } from "../../hooks/useWidth";
+import { useWidth } from "@hooks/useWidth";
 import NavLargeMenu from "./NavLargeMenu/NavLargeMenu";
 import { Link } from "react-router-dom";
 

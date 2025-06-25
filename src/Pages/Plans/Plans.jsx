@@ -1,11 +1,11 @@
 import React from "react";
-import LayOut from "../../LayOut/LayOut";
-import SectionHeading from "../../components/SectionHeading/SectionHeading";
+import LayOut from "@/LayOut/LayOut";
+import SectionHeading from "@components/SectionHeading/SectionHeading";
 import "./Plans.scss";
 import PlansContainer from "./components/PlansContainer/PlansContainer";
 import glitch from "/assets/glitch.png";
 import { Link } from "react-router-dom";
-import { useWidth } from "../../hooks/useWidth";
+import { useWidth } from "@hooks/useWidth";
 
 /**
  * Plans Component

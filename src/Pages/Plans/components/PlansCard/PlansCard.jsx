@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import "./PlansCard.scss";
-import Card from "../../../../components/Card/Card";
+import Card from "@components/Card/Card";
 import PlansItems from "../PlansItems/PlansItems";
 
 

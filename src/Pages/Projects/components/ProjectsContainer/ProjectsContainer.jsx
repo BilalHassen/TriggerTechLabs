@@ -1,7 +1,7 @@
 import React from "react";
-import SectionHeading from "../../../../components/SectionHeading/SectionHeading";
+import SectionHeading from "@components/SectionHeading/SectionHeading";
 import "./ProjectsContainer.scss";
-import projectData from "../../ProjectsData";
+import projectData from "@/Pages/Projects/ProjectsData";
 import ProjectCard from "../ProjectCard/ProjectCard";
 
 function ProjectsContainer() {

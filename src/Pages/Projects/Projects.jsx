@@ -1,8 +1,8 @@
 import React from 'react'
 import "./Projects.scss"
-import LayOut from '../../LayOut/LayOut'
+import LayOut from '@/LayOut/LayOut'
 import ProjectsContainer from './components/ProjectsContainer/ProjectsContainer'
-import SectionHeading from '../../components/SectionHeading/SectionHeading'
+import SectionHeading from '@components/SectionHeading/SectionHeading'
 export default function Projects() {
   return (
     <LayOut>

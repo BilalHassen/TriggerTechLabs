@@ -1,9 +1,9 @@
 import React from "react";
-import techData from "../../../../data/techStack";
+import techData from "@/data/techStack";
 import "./TechStack.scss";
 import TechStackCard from "../TechStackCard/TechStackCard";
-import ColorBar from "../../../../components/ColorBar/ColorBar";
-import SectionHeading from "../../../../components/SectionHeading/SectionHeading";
+import ColorBar from "@components/ColorBar/ColorBar";
+import SectionHeading from "@components/SectionHeading/SectionHeading";
 
 function TechStack() {
   return (
