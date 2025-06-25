@@ -8,7 +8,7 @@ import { FormspreeProvider } from "@formspree/react";
 import { ToastContainer } from "react-toastify";
 import { Slide } from "react-toastify";
 import Plans from "./Pages/Plans/Plans";
-
+import CaseStudy from "./Pages/CaseStudy/CaseStudy";
 /**
  * Main App Component
  * Sets up routing, error boundaries, and global providers
@@ -25,6 +25,7 @@ function App() {
             <Route path="/projects" element={<Projects />} />
             <Route path="/contact" element={<Contact />} />
             <Route path="/plans" element={<Plans/>}/>
+            <Route path="/case-study" element={<CaseStudy/>}/>
             <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           

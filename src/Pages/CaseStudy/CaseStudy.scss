@@ -1,0 +1,27 @@
+.case-study {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 8rem;
+    gap: 2rem;
+    height: 100vh;
+}
+
+.coming-soon {
+    font-size: 2rem;
+    font-weight: 600;
+    color: $pink;
+}
+
+.back-button {
+    background: linear-gradient(to right, #f70354, rgb(0, 187, 255));
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+
+    &:hover{
+        transform: scale(1.05);
+    }
+}
