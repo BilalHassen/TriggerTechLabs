@@ -11,8 +11,8 @@ function SideMenuList() {
       {links.map((text) => {
         
         return(
-          <Link to={text.path}>
-        <li key={text} className="nav__side-menu-item">
+          <Link to={text.path} key={text.id}>
+        <li className="nav__side-menu-item">
           <p className="nav__side-menu-text">{text.title}</p>
         </li>
         </Link>
