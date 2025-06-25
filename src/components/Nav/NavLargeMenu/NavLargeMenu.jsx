@@ -16,7 +16,7 @@ function NavLargeMenu() {
         <Link to="/contact">
           <li className="nav__links-item">Contact</li>
         </Link>
-        <Link to="">
+        <Link to="/case-study">
           <li className="nav__links-item">Case Study</li>
         </Link>
       </ul>
