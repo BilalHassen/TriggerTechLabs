@@ -13,12 +13,32 @@ function ProjectThumbnails({ thumbnails }) {
   const [open, setOpen] = useState(false);
   const [index, setIndex] = useState(0);
 
+  const mobile = thumbnails.find((thumbnail) =>
+    thumbnail.name.includes("mobile")
+  );
+  const tablet = thumbnails.find((thumbnail) =>
+    thumbnail.name.includes("tablet")
+  );
+  const desktop = thumbnails.find((thumbnail) =>
+    thumbnail.name.includes("desktop")
+  );
+
+  console.log(mobile);
+
   return (
     <div className="projects__card-swpContainer">
       <img
-        src={thumbnails[0].src}
-        alt={thumbnails[0].alt || `Project image ${i + 1}`}
+        src={desktop?.src || tablet?.src || mobile?.src}
+        srcSet={`
+       ${mobile.src} 480w,
+  ${tablet.src} 768w,
+  ${desktop.src} 1200w
+
+  `}
+       sizes="(max-width: 768px) 100vw, (max-width: 1365px) 90vw, 1200px"
+        alt={desktop?.alt || "Project image"}
         className="projects__card-img"
+        loading="lazy"
         onClick={() => {
           setOpen(true);
         }}
