@@ -1,8 +1,9 @@
+import React from "react";
 import {Link} from "react-router-dom";
 import "./SideMenu.scss";
-import SideMenuList from "../SideMenuList/SideMenuList";
-import SideMenuFooter from "../SideMenuFooter/SideMenuFooter";
-import BurgerBtn from "../BurgerBtn/BurgerBtn";
+import SideMenuList from "@components/Nav/SideMenuList/SideMenuList";
+import SideMenuFooter from "@components/Nav/SideMenuFooter/SideMenuFooter";
+import BurgerBtn from "@components/Nav/BurgerBtn/BurgerBtn";
 
 function SideMenu({ isOpen, handleSideMenu }) {
   return (

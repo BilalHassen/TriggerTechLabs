@@ -2,14 +2,14 @@ import React, { useEffect, useRef } from "react";
 import { FaMapMarkerAlt, FaEnvelope, FaDownload } from "react-icons/fa";
 import Carousel from "../Carousel/Carousel";
 import "./MainSection.scss";
-import Card from "../../../../components/Card/Card";
+import Card from "@components/Card/Card";
 import IconsContainer from "@components/IconsContainer/IconsContainer";
 import MySkills from "../MySkills/MySkills";
 import Typed from "typed.js";
 import TechStack from "../TechStack/TechStack";
 import DevProcess from "../DevProcess/DevProcess";
 import ContactMe from "../ContactMe/ContactMe";
-import Footer from "../../../../components/Footer/Footer";
+import Footer from "@components/Footer/Footer";
 import { JOB_TITLES, BIOGRAPHY } from "./MainData";
 
 

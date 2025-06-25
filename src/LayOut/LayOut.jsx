@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from 'prop-types';
-import Nav from "../components/Nav/Nav";
+import Nav from "@components/Nav/Nav";
 import "./LayOut.scss";
-import Footer from "../components/Footer/Footer";
-import { useWidth } from "../hooks/useWidth";
+import Footer from "@components/Footer/Footer";
+import { useWidth } from "@hooks/useWidth";
 import { useLocation } from "react-router-dom";
 
 function LayOut({ children }) {

@@ -1,7 +1,7 @@
 import React from "react";
 import "./Contact.scss";
-import SectionHeading from "../../components/SectionHeading/SectionHeading";
-import LayOut from "../../LayOut/LayOut";
+import SectionHeading from "@components/SectionHeading/SectionHeading";
+import LayOut from "@/LayOut/LayOut";
 import ContactsContainer from "./components/ContactsContainer/ContactsContainer";
 import ContactForm from "./components/ContactForm/ContactForm";
 

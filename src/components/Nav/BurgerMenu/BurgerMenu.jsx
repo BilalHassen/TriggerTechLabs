@@ -1,8 +1,9 @@
 import React from "react";
+import "./BurgerMenu.scss";
 import { useState, useEffect } from "react";
 
-import SideMenu from "../SideMenu/SideMenu";
-import BurgerBtn from "../BurgerBtn/BurgerBtn";
+import SideMenu from "@components/Nav/SideMenu/SideMenu";
+import BurgerBtn from "@components/Nav/BurgerBtn/BurgerBtn";
 
 export const BurgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
