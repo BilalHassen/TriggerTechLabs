@@ -5,4 +5,5 @@ body {
   font-family: "SpaceGrotesk";
   background-color: $mainBgColour;
   font-size: 62.5%;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 }

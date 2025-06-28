@@ -6,6 +6,11 @@
 @use "./variables" as *;
 
 html,
+body {
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
+}
+
+html,
 body,
 span,
 applet,
@@ -168,6 +173,18 @@ button {
   box-sizing: border-box;
   font: inherit;       // inherit font from body
   color: inherit;      // use current text color
+}
+/* targets whole scrollbar container*/
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+// styles the thumb the user can drag to scroll
+::-webkit-scrollbar-thumb {
+  background-color: $pink;
+  border-radius: 10px;
+  
 }
 
 

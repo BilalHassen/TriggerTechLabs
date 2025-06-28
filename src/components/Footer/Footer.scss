@@ -10,6 +10,7 @@
   // Shift it left by half the screen, then right by half the container
   // This keeps the section visually centered with the rest of the content
   border-top: 1px solid grey;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 
   &__icons {
     gap: 1rem;

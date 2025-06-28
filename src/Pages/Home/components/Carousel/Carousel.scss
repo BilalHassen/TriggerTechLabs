@@ -8,6 +8,7 @@
   // This keeps the section visually centered with the rest of the content
   overflow: hidden;
   padding: 2rem 0;
+  overflow-x: hidden; /* Prevent horizontal scrollbar */
 
   &-track {
     display: flex;
