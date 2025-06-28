@@ -1,6 +1,7 @@
 import React from "react";
 import { FaGithub, FaLinkedin, FaInstagram, FaEnvelope } from "react-icons/fa";
 import "./IconsContainer.scss";
+import { Link } from "react-router-dom";
 
 function IconsContainer({ className, iconClass }) {
   return (
@@ -26,7 +27,7 @@ function IconsContainer({ className, iconClass }) {
       </a>
 
       <a
-        href="https://instagram.com/your-username"
+        href="https://www.instagram.com/triggertechlabs/"
         className="icons-container__link"
         target="_blank"
         rel="noopener noreferrer"
@@ -35,15 +36,13 @@ function IconsContainer({ className, iconClass }) {
         <FaInstagram className="icons-container__icon" />
       </a>
 
-      <a
-        href="mailto:bilalhass977@gmail.com"
+      <Link
+        to="/contact"
         className="icons-container__link"
-        target="_blank"
-        rel="noopener noreferrer"
         aria-label="Send me an email"
       >
         <FaEnvelope className="icons-container__icon" />
-      </a>
+      </Link>
     </div>
   );
 }
