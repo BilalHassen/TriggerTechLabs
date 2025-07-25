@@ -100,7 +100,7 @@ function MainSection() {
                   href="/assets/resume.pdf"
                   download
                   className="home-main__icon-text home-main__resume-link"
-                  aria-label="Download Bilal Hassan's resume (PDF)"
+                  aria-label="Download Bilal Hassen's resume (PDF)"
                 >
                   <span>Download Resume</span>
                   <FaDownload 
