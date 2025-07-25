@@ -1,4 +1,4 @@
-# TriggerTechLabs - Bilal Hassan Portfolio
+# TriggerTechLabs - Bilal Hassen Portfolio
 
 A modern, accessible, and SEO-optimized portfolio website built with React, showcasing full-stack development skills and projects.
 
