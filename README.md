@@ -186,7 +186,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Email**: bilalhass977@gmail.com
 - **Location**: Toronto, Ontario, Canada
-- **Portfolio**: [triggertechlabs.com](https://triggertechlabs.com)
+- **Portfolio**: https://triggertechlabs.ca/
 
 ---
 
