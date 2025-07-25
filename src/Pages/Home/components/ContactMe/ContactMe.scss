@@ -71,6 +71,12 @@
     height: 4rem;
     width: 50%;
     border-radius: 40px;
+    transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+
+    &:hover {
+      background-color: rgb(1, 147, 251);
+      transform: scale(1.05);
+    }
 
     @include tablet-small {
       max-width: 20rem;
