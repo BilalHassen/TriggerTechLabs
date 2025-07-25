@@ -28,6 +28,25 @@
         }
     }
 
+    /* Form label styling for accessibility */
+    &__form-label {
+        display: block;
+        font-size: 1.4rem;
+        font-weight: 500;
+        color: $white;
+        margin-bottom: 0.8rem;
+        line-height: 1.4;
+
+        .required {
+            color: $pink;
+            font-weight: 700;
+        }
+
+        @include tablet-small {
+            font-size: 1.6rem;
+        }
+    }
+
     /* Individual form field container */
     &__form-field{
         width: 100%;
@@ -43,6 +62,12 @@
             flex-direction: row;
             gap: 6rem;
         }
+    }
+
+    /* Subject and message containers */
+    &__subject-container,
+    &__message-container {
+        width: 100%;
     }
 
     /* Placeholder text styling */
@@ -63,12 +88,26 @@
         color: $white;
         box-sizing: border-box;
         background-color: transparent;
-        transition: border-bottom 0.3s ease; /* Smooth transition for focus states */
+        transition: border-bottom 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus states */
 
         /* Disabled state styling */
         &:disabled {
             opacity: 0.6;
             cursor: not-allowed;
+        }
+
+        /* Focus state with accessibility improvements */
+        &:focus-visible {
+            outline: 2px solid $pink;
+            outline-offset: 2px;
+            border-radius: 4px;
+            border-bottom: 1px solid $pink;
+        }
+
+        /* Error state styling */
+        &[aria-invalid="true"] {
+            border-bottom: 1px solid #dc3545;
+            box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
         }
     }
 
@@ -94,12 +133,26 @@
         border-bottom: 1px solid $icon-border;
         box-sizing: border-box;
         background-color: transparent;
-        transition: border-bottom 0.3s ease; /* Smooth transition for focus states */
+        transition: border-bottom 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for focus states */
 
         /* Disabled state styling */
         &:disabled {
             opacity: 0.6;
             cursor: not-allowed;
+        }
+
+        /* Focus state with accessibility improvements */
+        &:focus-visible {
+            outline: 2px solid $pink;
+            outline-offset: 2px;
+            border-radius: 4px;
+            border-bottom: 1px solid $pink;
+        }
+
+        /* Error state styling */
+        &[aria-invalid="true"] {
+            border-bottom: 1px solid #dc3545;
+            box-shadow: 0 0 0 2px rgba(220, 53, 69, 0.25);
         }
     }
 
@@ -123,13 +176,25 @@
         font-weight: 600;
         border-radius: 30px;
         cursor: pointer;
-        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out;
+        transition: background-color 0.5s ease-in-out, transform 0.5s ease-in-out, box-shadow 0.3s ease;
         border: none; /* Remove default button border */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.8rem;
 
         /* Hover effect with transform animation */
         &:hover:not(:disabled){
             background-color: rgb(1, 147, 251);
             transform: scale(1.05); /* Subtle lift effect */
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
+        }
+
+        /* Focus state for accessibility */
+        &:focus-visible {
+            outline: 2px solid $white;
+            outline-offset: 2px;
+            box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
         }
 
         /* Disabled state styling */
@@ -137,6 +202,26 @@
             opacity: 0.6;
             cursor: not-allowed;
             transform: none; /* Prevent transform when disabled */
+        }
+
+        /* Loading state styling */
+        &.loading {
+            position: relative;
+            color: transparent !important;
+        }
+
+        &.loading::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 16px;
+            height: 16px;
+            margin: -8px 0 0 -8px;
+            border: 2px solid transparent;
+            border-top: 2px solid currentColor;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
         }
 
         @include tablet-small{
@@ -147,12 +232,26 @@
 
     /* Error message styling */
     &__form-error{
-        color: $pink;
+        color: #dc3545;
         font-size: 1.2rem;
         font-weight: 600;
         text-align: left;
         margin-top: 0.5rem;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        &::before {
+            content: "⚠";
+            font-size: 1.4rem;
+        }
     }
+}
+
+/* Loading animation for buttons */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* Screen reader only class for accessibility labels */
@@ -223,4 +322,39 @@ textarea {
 .Toastify__progress-bar {
     background: #f50057 !important;
 }
-  
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+    .contact {
+        &__form-button {
+            border: 2px solid currentColor;
+        }
+        
+        input,
+        textarea {
+            border: 2px solid currentColor;
+        }
+    }
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+    .contact {
+        &__form-button {
+            transition: none;
+            
+            &:hover:not(:disabled) {
+                transform: none;
+            }
+        }
+        
+        input,
+        textarea {
+            transition: none;
+        }
+    }
+    
+    @keyframes spin {
+        animation: none;
+    }
+}
