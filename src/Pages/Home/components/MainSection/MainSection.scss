@@ -1,5 +1,5 @@
 .home-main {
-  margin-top: 4rem;
+  margin-top: 6rem;
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -7,7 +7,6 @@
     display: flex;
     flex-direction: row;
     gap: 2rem;
-    margin-top: 8rem;
   }
 
   @include tablet-medium {
@@ -60,15 +59,16 @@
   }
 
   &__animated-text {
-    font-size: 2.5rem; /* Adjust the font size */
-    font-weight: bold; /* Optional: Make the text bold */
+    font-size: 2.5rem; 
+    font-weight: bold; 
     background: linear-gradient(
       91deg,
       #f70354 0%,
       #0074fd 100%
-    ); /* Define the gradient */
-    -webkit-background-clip: text; /* Clip the background to the text (important for webkit browsers) */
-    color: transparent; /* Make the text itself transparent so the gradient*/
+    ); 
+    -webkit-background-clip: text; 
+    background-clip: text; 
+    color: transparent;
 
     @include tablet-small {
       font-size: 3.4rem;
