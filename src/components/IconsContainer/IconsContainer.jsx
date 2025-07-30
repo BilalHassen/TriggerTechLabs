@@ -17,7 +17,7 @@ function IconsContainer({ className, iconClass }) {
       </a>
 
       <a
-        href="https://www.linkedin.com/in/bilal-hassen/"
+        href="https://linkedin.com/in/bilal-hassen/"
         className="icons-container__link"
         target="_blank"
         rel="noopener noreferrer"

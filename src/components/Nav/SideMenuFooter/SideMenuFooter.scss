@@ -6,6 +6,19 @@
     height: fit-content;
   }
 
+  &__side-menu-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+
   &__side-menu-icon {
     font-size: 35px;
     color: white; /* Adjust the color as needed */
