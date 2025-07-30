@@ -9,7 +9,7 @@ import Typed from "typed.js";
 import TechStack from "../TechStack/TechStack";
 import DevProcess from "../DevProcess/DevProcess";
 import ContactMe from "../ContactMe/ContactMe";
-import Footer from "../../../../components/Footer/Footer";
+
 import { JOB_TITLES, BIOGRAPHY } from "./MainData";
 
 
@@ -81,7 +81,6 @@ function MainSection() {
       <TechStack />
       <DevProcess />
       <ContactMe />
-      <Footer />
     </>
   );
 }
