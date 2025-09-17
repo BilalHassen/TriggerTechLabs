@@ -1,13 +1,48 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-CA">
   <head>
+    <!-- Character encoding: makes sure text (like accents, symbols, etc.) shows up correctly -->
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + React</title>
+
+    <!-- Viewport: ensures the site scales properly on phones and tablets -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Page title: shows up in the browser tab and Google search results -->
+    <title>TriggerTech Labs — Custom Website Development Services</title>
+
+    <!-- Meta description: short summary of the page.
+         This is what is shown under your title in Google search. -->
+    <meta name="description" content="TriggerTech Labs builds fast, SEO-friendly websites for businesses. Boost your online presence with our professional web development services." />
+
+    <!-- Canonical URL: tells google this is the official url for the website".
+         Helps prevent duplicate content problems if the same page is accessible at multiple URLs. -->
+    <link rel="canonical" href="https://triggertechlabs.ca/" />
+
+    <!-- Open Graph tags: controls hows the website info looks when being shared-->
+    <meta property="og:title" content="TriggerTech Labs — Custom Website Development" />
+    <meta property="og:description" content="We build fast, SEO-friendly websites that help businesses grow online." />
+    <meta property="og:url" content="https://triggertechlabs.ca/" />
+    <meta property="og:type" content="website" />
+    <!-- og:image: the preview image thats shown when the website is shared.
+         Needs to be a full url of an image. -->
+    <meta property="og:image" content="https://triggertechlabs.ca/og/triggertechlabs-preview.jpg" />
+
+    <!-- Twitter card tags: similar to Open Graph but for Twitter/X specifically. -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- Optional: your Twitter handle so Twitter knows who posted the site -->
+    <meta name="twitter:site" content="@TriggerTechLabs" />
+    <meta name="twitter:title" content="TriggerTech Labs — Custom Website Development" />
+    <meta name="twitter:description" content="We build fast, SEO-friendly websites that help businesses grow online." />
+    <meta name="twitter:image" content="https://triggertechlabs.ca/og/triggertechlabs-preview.jpg" />
+
+    <!-- Favicon: the little icon that shows in the browser tab -->
+    <link rel="icon" type="image/png" href="/assets/logo.png" />
   </head>
   <body>
+    <!-- React mounts your app into this div -->
     <div id="root"></div>
+
+    <!-- Loads your React code (compiled by Vite) -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

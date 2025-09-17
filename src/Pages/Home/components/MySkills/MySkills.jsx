@@ -8,7 +8,7 @@ function MySkills() {
   return (
     <div className="my-skills">
       <Card className="my-skills__card">
-        <h1 className="my-skills__heading">Core Capabilities</h1>
+        <h2 className="my-skills__heading">Core Capabilities</h2>
         {SKILLS.map((skill, index) => (
           <SkillContainer
             key={index}

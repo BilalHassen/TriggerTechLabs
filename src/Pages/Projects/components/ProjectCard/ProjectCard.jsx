@@ -11,7 +11,7 @@ function ProjectCard({title, description, thumbnails, textColor}) {
          <ProjectThumbnails thumbnails={thumbnails}/>
       
       <div className="projects__card-wrapper">
-        <h1 style={{color: `${textColor}`, '--textColor': `${textColor}`}}className="projects__card-title">{title}</h1>
+        <h3 style={{color: `${textColor}`, '--textColor': `${textColor}`}}className="projects__card-title">{title}</h3>
         <p className="projects__card-description">{description}</p>
       </div>
 
